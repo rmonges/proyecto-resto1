@@ -450,13 +450,13 @@ ul li:hover .submenu {
         font-family: 'Indie Flower', cursive;
         letter-spacing: 5px;
         word-spacing: 10px;
+        text-align: center;
      
         
     }
     .art__comb {
         display: flex;
     flex-direction: column;
-    align-content: flex-end;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
@@ -563,6 +563,10 @@ ul li:hover .submenu {
 
     .art__tabla {
         background-color: #d1cece66;
+    }   
+
+    .art__tablados {
+        background-color: #d1cece66 ;
     }
     
     /***SECCION FOOTER***/
@@ -588,19 +592,17 @@ ul li:hover .submenu {
 
     .span {
         box-sizing: border-box;
-    
         border: 2px white double;
         font-style: italic;
         color: cornsilk;
-        font-size: 35px;
-        text-align: center; 
-        letter-spacing: 13px;
-        word-spacing: 18px;
-        line-height: 20px;
+        font-size: 1.6rem;
+        text-align: center;
+        letter-spacing: 0.8rem;
+        word-spacing: 1.5rem;
+        line-height: 1rem;
         background-image: linear-gradient(to right, #a4d9a4, black);
         margin-top: 3rem;
         margin-bottom: 3rem;
-
     }
     
     .pie {
@@ -726,11 +728,10 @@ ul li:hover .submenu {
 
         }
         .span {
-            font-size: 20px;
-            text-align: center; 
-            letter-spacing: 9px;
-            word-spacing: 9px;
-            line-height: 10px;
+            font-size: 1rem;
+            text-align: center;
+            letter-spacing: 1rem;
+            word-spacing: 0.2rem;
         }
 
         .parrafo__menu {
