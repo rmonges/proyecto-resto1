@@ -331,7 +331,6 @@ ul li:hover .submenu {
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     background-color: rgb(46, 128, 131);
-    margin-top: 3rem;
     margin-bottom: 3rem;
 
     }
@@ -705,7 +704,7 @@ ul li:hover .submenu {
 
     @media screen and (max-width:780px) {
         .h1 {
-            font-size: 32px;
+            font-size: 2rem;
            
         }
 
@@ -718,7 +717,7 @@ ul li:hover .submenu {
         }
         
         .a {
-            font-size:18px;
+            font-size:1.7rem;
         }
         
         section article ul {
@@ -735,7 +734,7 @@ ul li:hover .submenu {
         }
 
         .parrafo__menu {
-            font-size: 20px;
+            font-size: 2rem;
 
         }
         
@@ -766,14 +765,14 @@ ul li:hover .submenu {
    
      @media screen and (max-width:780px) {
         .box__promosp {
-            font-size: 20px;
+            font-size: 2rem;
         }
         .h1__promo {
-            font-size: 30px;
+            font-size: 2rem;
         }   
 
         .flex__pie {
-            font-size: 100px;
+            font-size: 4rem;
 
         }
 
@@ -786,7 +785,7 @@ ul li:hover .submenu {
         }
 
         .h3__promos {
-            font-size: 30px;
+            font-size: 2.4rem;
         }
 
          
@@ -798,12 +797,12 @@ ul li:hover .submenu {
      @media screen and (max-width:780px) {
 
         .h1__galeria {
-            font-size: 40px;
+            font-size: 3rem;
 
         }
 
         .h3__galeria {
-            font-size: 25px;
+            font-size: 2rem;
             text-align: center;
         }
          
@@ -811,10 +810,10 @@ ul li:hover .submenu {
      
      /*Menu*/
 
-     @media  screen and (max-width: 780px) {
+     @media screen and (max-width: 780px) {
                
         .h1 {
-            font-size: 20px;
+            font-size: 2rem;
             margin-top: 1rem;
         }
         
