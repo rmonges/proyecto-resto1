@@ -696,7 +696,7 @@ ul li:hover .submenu {
 
     }
     
-    .img__resp {
+    .img__resp:hover {
         width: 300px;
     height: -webkit-fill-available;
         
