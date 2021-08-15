@@ -280,6 +280,8 @@ ul li:hover .submenu {
     margin-bottom: 3rem;
 }
 
+/*CONTACTO*/
+
 .estas__contacto{
     text-emphasis: none;
 
@@ -287,20 +289,21 @@ ul li:hover .submenu {
 
 .section__dir {
     
-    display:inline-block;
-    width: 45%;
-    height: 20%;
+    display:inline-block;    
     padding: 5px;
     border: 4px double;
     margin-top: 30px;
     background-image: linear-gradient(to right, #a4d9a4, black);
 }
 
+h2, .h2 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
 .section__hor {
     
-    display:inline-table;
-    width: 45%;
-    height: 30%;
+    display:inline-table;    
     padding: 5px;
     border: 4px double;
     margin-top: 30px;
@@ -854,6 +857,20 @@ ul li:hover .submenu {
         }
        
 
+         
+     }
+
+     /*media querin contacto*/
+
+     @media screen and (max-width: 780px) {
+        .row {
+                
+            margin-right: -15px;
+            margin-left: -15px;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: flex-start;
+        }
          
      }
         
