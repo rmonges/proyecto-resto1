@@ -254,6 +254,10 @@ li {
     margin-top: 2rem;
 }
 
+.margen__img {
+    margin-bottom: 5rem;
+}
+
 .article__imagen{
     width: 50%;
     display: inline-block;
@@ -280,7 +284,13 @@ ul li:hover .submenu {
     margin-bottom: 3rem;
 }
 
-/*CONTACTO*/
+.border__cont {
+    border: 3px double black;
+    margin-bottom: 3rem;
+} 
+       
+
+
 
 .estas__contacto{
     text-emphasis: none;
@@ -592,7 +602,12 @@ h2, .h2 {
     footer section div img {
         position: relative;
         left: 1.5rem;
-        top: 0.5rem;
+        top: -0.5rem;
+    }
+
+ .img__logo {
+        position: relative;
+        top: 1.5rem;
 
     }
 
@@ -690,6 +705,7 @@ h2, .h2 {
     body {
         width: 100%;
         height: auto;
+        width: 501px;
 
     }
     .body__menu {
@@ -881,6 +897,16 @@ h2, .h2 {
         .section__hor {
             width: 100%;
             height: 60%;
+        }
+
+        footer section div img {
+            left: 0%;
+            top: 0%;
+
+        }
+        
+        .offset-1 {
+           margin-left: 0px;
         }
          
      }
