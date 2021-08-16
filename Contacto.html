@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="styles.css"type=text/css>
 </head>
-<body class="contenedor__resp">
+<body class="container">
     <header  class="header">
         <nav class="alinear__nav">
             <ol class="ol">
@@ -34,14 +34,11 @@
       <main>
         <h1 class="h1">COMUNICATE CON NOSOTROS</h1>  
         <img src="imagenes/googlemaps.jpeg" alt="Mapa" height="400px" width="100%">    
-        <section>
-            
-             <div>   <!--Colocar tres modulos LLAMAR AHORA- UBCICACION - HORARIOS EN EL MISMO RENGLON-->
-                 <article>
-                    
-                    <h2>CONTACTO </h2>                
-                    <form class="col-md-6 offset-1 border__cont">  
-                        <fieldset class="form-group">                             
+        <section>               
+                   <section class="col-md-6 offset-1 border__cont">              
+                     <h2>CONTACTO </h2>
+                     <form class="form-group">  
+                        <fieldset>                           
                               <legend>Solicitud de datos Personales</legend>
                                
                                <label for="Nombre">Nombre</label>
@@ -58,22 +55,22 @@
                                <option value="F">Soltera</option> 
                                
                         </fieldset> 
-                        <br> 
-                        <br>
+                         
+                        
                         <fieldset  class="form-group"> 
-                          <h2 >Comentarios</h2>   
+                          <legend>Comentarios</legend>   
                              <div> 
                                <p>Queres dejarnos tu comentario?</p>
                                <input type="checkbox" name="1">
                              </div>
-                             <textarea class="back" name="Comentario" id="" cols="15" rows="4" style="width: 304px; height: 204px;"></textarea>
+                             <textarea class="back" name="Comentario" id="" cols="15" rows="4" style="width: 350px; height: 204px;"></textarea>
                              <br>
                              <input type="submit" value="Enviar formulario">
                              <input type="reset" value="Resetear formulario">
                         </fieldset>   
                     </form> 
-                 </article>                                                           
-             </div>  
+                 </section>                                                         
+              
              <br>
              <br>
              <section class="flex__cont" >                   
@@ -110,8 +107,8 @@
         <div class="margen__img">
           <h3 class="h3">Medios de Pago</h3>
           <img src="imagenes/vespas comidas/medios de pago.png" alt="medios de pago" width="200" height="75" class="borders">
-       </div>
-      </main>
+        </div>
+      </main> 
       
       <footer >
         <section class="footer__top">
@@ -133,6 +130,9 @@
             </div>
         </section>    
       </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
              
 </body>
 </html>

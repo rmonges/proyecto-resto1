@@ -15,9 +15,18 @@ html {
     margin: 0 auto;
     background-image: url("imagenes/vespas comidas/fondopapel.jpg");
     background-size: cover;
-   
-    
 }
+
+.container {
+  
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url("imagenes/vespas comidas/fondopapel.jpg");
+    background-size: cover;
+  }
 
 
 main {
@@ -287,6 +296,7 @@ ul li:hover .submenu {
 .border__cont {
     border: 3px double black;
     margin-bottom: 3rem;
+    margin-top: 3rem;
 } 
        
 
