@@ -298,8 +298,12 @@ ul li:hover .submenu {
     margin-bottom: 3rem;
     margin-top: 3rem;
 } 
-       
 
+.form-group {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+       
+}
 
 
 .estas__contacto{
@@ -922,6 +926,8 @@ h2, .h2 {
         .black {
             width: 310px;
         }
+
+       
          
      }
         
