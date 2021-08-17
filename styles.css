@@ -20,7 +20,7 @@ html {
 .container {
   
     width: 100%;
-    padding-right: 15px;
+    padding-right: 5px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
@@ -917,6 +917,10 @@ h2, .h2 {
         
         .offset-1 {
            margin-left: 0px;
+        }
+
+        .black {
+            width: 310px;
         }
          
      }
