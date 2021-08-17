@@ -1,6 +1,7 @@
 <html lang="en">
 <head>
-    <title></title>       
+    <title></title>        
+    <link rel="stylesheet" href="styles.css"type=text/css>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="styles.css"type=text/css>
 </head>
-<body class="container">
+
+<body class="contenedor__resp">
     <header  class="header">
         <nav class="alinear__nav">
             <ol class="ol">
@@ -33,12 +33,15 @@
     </header>
       <main>
         <h1 class="h1">COMUNICATE CON NOSOTROS</h1>  
-        <img src="imagenes/googlemaps.jpeg" alt="Mapa" height="400px" width="100%">    
-        <section>               
-                   <section class="col-md-6 offset-1 border__cont">              
-                     <h2>CONTACTO </h2>
-                     <form class="form-group">  
-                        <fieldset>                           
+        <img src="imagenes/googlemaps.jpeg" alt="Mapa" height="300px" width="100%">    
+        <section>
+            
+             <div>   <!--Colocar tres modulos LLAMAR AHORA- UBCICACION - HORARIOS EN EL MISMO RENGLON-->
+                 <article>
+                    
+                    <H2>CONTACTO</H2>                
+                    <form>  
+                        <fieldset>                             
                               <legend>Solicitud de datos Personales</legend>
                                
                                <label for="Nombre">Nombre</label>
@@ -50,33 +53,53 @@
                                <label for="email"> E-mail</label>
                                <input type="email" name="email" placeholder="lala@gmail.com">
                                <br> 
-                               <select name="Sexo" id="indicar sexo">
+                               <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true">
+                                  Sexo
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <a class="dropdown-item" href="#">Masculino</a>
+                                  <a class="dropdown-item" href="#">Femenino</a>
+                                </div>
+                              </div>
+                               <select name="Sexo" id="">
                                <option value="M">Soltero</option>
                                <option value="F">Soltera</option> 
                                
                         </fieldset> 
-                         
                         
-                        <fieldset  class="form-group"> 
-                          <legend>Comentarios</legend>   
+                        <br> 
+                        <br>
+                        <fieldset> 
+                          <legend >Comentarios</legend>   
                              <div> 
-                               <p>Queres dejarnos tu comentario?</p>
+                             <p>Queres dejarnos tu comentario?</p>
                                <input type="checkbox" name="1">
                              </div>
-                             <textarea  class= "black" name="" id="" cols="60" rows="10" width="550px" ></textarea>
+                             <textarea class="back" name="Comentario" id="" cols="15" rows="4" style="width: 304px; height: 204px;"></textarea>
                              <br>
                              <input type="submit" value="Enviar formulario">
                              <input type="reset" value="Resetear formulario">
                         </fieldset>   
                     </form> 
-                 </section>                                                         
-              
+                 </article>                                                           
+             </div>  
              <br>
+             <div class="dropdown">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Dropdown button
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+            </div>
              <br>
              <section class="flex__cont" >                   
                 <div class="section__dir">
                   <article>                               
-                    <h2 >DIRECCION</h2>
+                    <h2>DIRECCION</h2>
                     <p>Av. Tissera702, Mendiolaza Cordoba</p>
                     <h3>Como Llegar</h3>                                  
                     <button>
@@ -84,6 +107,7 @@
                     </button>                                         
                   </article>
                 </div> 
+             
                 <div class="section__hor">
                   <article>
                     <h2>HORARIOS</h2>
@@ -103,35 +127,32 @@
              </section>  
         </section> 
 
-        <div class="margen__img">
+        <div>
           <h3 class="h3">Medios de Pago</h3>
-          <img src="imagenes/vespas comidas/medios de pago.png" alt="medios de pago" width="200" height="75" class="borders">
-        </div>
-      </main> 
-      
-      <footer >
-        <section class="footer__top">
-            <div class="div__footer">
-                <span class= "span" >#Seguinos en nuestras redes</span>             
-                <img src="imagenes/vespas comidas/logo redes.jpg" alt="logo redes" width="65" height="45">
-            </div> 
-        </section>    
-        <section class="footer__bottom">    
-            <div class="article__titulo">
+          <img src="imagenes/visa/medios de pago.png" alt="medios de pago" width="200" height="75" class="borders">
+       </div>
+       <br>
+       <div class="alinearrh">
+       <span class= "span" >#Seguinos en nuestras redes</span> 
+       <img src="imagenes/visa/logo redes.jpg" alt="logo redes" width=55 height="30">
+       </div> 
+       <br>   
+      </main>
+          <br>       
+      <footer>
+              <div class="article__titulo">
                 <em>Vespa Resto&Bar</em>          
                 <img src="" alt="">       
-                <span> TEL:3515786547</span>
-                <span>Ubicacion: Tissera 702,</span>
+                <span> Tel:3515786547</span>
+                <span>Ubicacion: Tissera 702</span>
                 <span>Mendiolaza Córdoba</span>
-            <div>
-              <img class= "img__logo" src="imagenes/vespas comidas/logo.jpg" alt=""width="75px" height="75px">
-            <p class="alinear">Creado por Vespa Resto&Bar-2021-Derechos reservados</p>
-            </div>
-        </section>    
+              </div>
+              <div>
+               <p class="alinear">Creado por Vespa Resto&Bar-2021-Derechos reservados</p>
+              </div>
       </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-             
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
