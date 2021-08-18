@@ -631,6 +631,11 @@ h2, .h2 {
  .img__logo {
         position: relative;
         top: 1.5rem;
+        left: 50%;
+        transform: translate(-35px);
+}
+
+
 
     }
 
