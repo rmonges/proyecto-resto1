@@ -72,7 +72,8 @@ main {
 .navbar-toggler-icon {
   
     display:flex;
-    justify-content: flex-end;
+    align-content: center;
+    justify-content: space-around;    
     width: 100%;
     height: 3.5rem;
     vertical-align: middle;
@@ -152,7 +153,7 @@ h3 {
 
 .alinear__nav{
     text-align: center;
-   
+   height: 60px;
     
    
 }    
@@ -161,6 +162,7 @@ h3 {
     list-style: none;        
     padding: 0;
     margin: 0;
+    height: 60px;
 }
 
 .ol__titulo {
@@ -185,9 +187,10 @@ h3 {
 }
 
  .item:hover {
-    display: inline-block;
-    width: 90px;
+    
+    width: 140px;
     background: rgb(110, 99, 99);
+    
 
     
 }
@@ -231,19 +234,23 @@ header nav ol {
 }
 
 li {
+    
     list-style: none;
     display: block;
-    padding: 10px;
+    padding: 40px;
     list-style: none;
+    padding-top: 15px;
+}
     
     
 
     
-}
+
 
 .a {
     text-decoration: none; 
-    color: white;
+    
+    color: #dae0e5;
     font-family: 'Zen Loop', cursive;
     font-size: 25px;
 }
@@ -305,10 +312,7 @@ li {
     position: absolute;
 }
 
-ul li:hover .submenu {
-    display: block;
 
-}
 
 .alinear {
     text-align: center;
@@ -814,6 +818,7 @@ h2, .h2 {
 
         .item { 
             border-top: solid;
+            height: 30px;
         }
 
         #btn-menu {
