@@ -338,6 +338,12 @@ li {
 
 }
 
+.btn-primary {
+    color: #fff;
+    background-color: #7ebbc4;
+    border-color: #007bff33;
+  }
+
 .section__dir {
     
     display:inline-block; 

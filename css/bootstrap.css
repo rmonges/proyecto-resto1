@@ -2495,6 +2495,10 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 
 .btn:not(:disabled):not(.disabled) {
   cursor: pointer;
+  position: relative;
+  bottom: 20px;
+
+  
 }
 
 .btn:not(:disabled):not(.disabled):active, .btn:not(:disabled):not(.disabled).active {
@@ -3113,6 +3117,7 @@ input[type="button"].btn-block {
 
 .collapse {
   display: none;
+  color: white;
 }
 
 .collapse.show {
