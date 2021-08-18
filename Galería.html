@@ -1,7 +1,6 @@
 <html lang="en">
     <head>
-        <title></title>        
-        <link rel="stylesheet" href="styles.css" type="text/css">     
+        <title></title>            
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +11,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="styles.css"type=text/css>
     </head>
     <body class="contenedor__resp">
         <header  class="header">
@@ -61,15 +62,46 @@
                <img src="imagenes/vespas comidas/lomitos.jpg"  alt="lomitos" >
              </article> 
            </div>    
-        
-                
-          <h2 class="h2__galeria">Nuestros amigos Vesperos</h2>
+           
+           <h2 class="h2__galeria">Nuestros amigos Vesperos</h2>
+          <div id="demo" class="carousel slide" data-ride="carousel">
+            
+              <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+              </ul>
+            
+              <!-- The slideshow -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imagenes/vespas comidas/vespaslider1.jpg"  alt="Foto resto" width="850" height="440">
+                </div>
+                <div class="carousel-item">
+                  <img src="imagenes/vespas comidas/vespaslider2.jpg"  alt="resto"width="850" height="440">
+                </div>
+                <div class="carousel-item">
+                  <img src="imagenes/vespas comidas/niño.jpg"  alt="niño"width="850" height="440">
+                </div>
+              </div>
+            
+              <!-- Left and right controls -->
+              <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            
+            </div>
+
+            
           <div class="contenedor">
              <article class="three-columns">
-               <img src="imagenes/vespas comidas/vespa.jpg"  alt="Foto resto" width="350" height="240">
-             </article> 
+               <img src="imagenes/vespas comidas/vespaslider1.jpg"  alt="Foto resto" width="350" height="240">
+             </article>   
              <article class="three-columns"> 
-               <img src="imagenes/vespas comidas/vespa resto.jpg"  alt="resto"width="350" height="240">
+               <img src="imagenes/vespas comidas/vespaslider2.jpg"  alt="resto"width="350" height="240">
              </article>
              <article class="three-columns" >
                <img src="imagenes/vespas comidas/niño.jpg"  alt="niño"width="350" height="240">
@@ -93,12 +125,16 @@
               <span> TEL:3515786547</span>
               <span>Ubicacion: Tissera 702,</span>
               <span>Mendiolaza Córdoba</span>
-          </div>        
-          <div>
+          </div>
+          <div>      
           <p class="alinear">Creado por Vespa Resto&Bar-2021-Derechos reservados</p>
           </div>
       </section>    
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
 
     
 </body>

@@ -401,6 +401,14 @@ h2, .h2 {
 
     }
 
+    .carousel {
+        position: relative;
+        left: 50px;
+        margin-top: 2rem;
+    }
+    
+    
+
     .img__scale {
         transform: scale(0.8, 1);
     }
