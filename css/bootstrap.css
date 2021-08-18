@@ -3117,11 +3117,13 @@ input[type="button"].btn-block {
 
 .collapse {
   display: none;
-  color: white;
+  color: black;
+  
 }
 
 .collapse.show {
   display: block;
+  background-color: #bfcddbc9;
 }
 
 tr.collapse.show {
