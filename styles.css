@@ -336,8 +336,17 @@ h2, .h2 {
     background-image: linear-gradient(to right, #a4d9a4, black);
 } 
 
+.box__form {
+    border: 2px double;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
 .back {
+
     background-color: lightgrey;
+    width: 850px;
+    display: inherit;
 } 
 
 
@@ -923,7 +932,7 @@ h2, .h2 {
            margin-left: 0px;
         }
 
-        .black {
+        .back {
             width: 310px;
         }
 
