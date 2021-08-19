@@ -9,6 +9,13 @@ html {
     height: 100%;
 }
 
+.html {
+    width: 770px;
+    height: 2240px;
+    padding-left: 18;
+    
+}
+
 .contenedor__resp {
     width: 90%;
     max-width: 1000px;
@@ -415,19 +422,23 @@ h2, .h2 {
 
 .h1__galeria { 
     color: black;
-    font-size: 80px;
-    font-family: 'Playfair Display', serif;
-    text-align: center;    
-    border: double 5px black;  
-    border-end-start-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    background-color: rgb(46, 128, 131);
+    font-size: 50px 30px;
+    text-align: center;
+    border: double 5px #a88686;
+    background-color: rgb(0 128 131 / 20%);
     margin-bottom: 3rem;
+    text-decoration: double;
+    border-right: black;
+    border-left: black;
+    margin-left: 23%;
+    font-family: 'Zen Loop', cursive;
+    width: 354px;
+    letter-spacing: 0.8rem;
+    word-spacing: 1.5rem;
 
-    }
+}
+
+    
 
     .carousel {
         position: relative;
@@ -444,7 +455,7 @@ h2, .h2 {
 
     .h2__galeria {
         font-size: 40px;
-        font-family: 'Playfair Display', serif;
+        font-family: inherit;
         text-underline-position: auto;
         color: rgb(53, 80, 53);
     }
@@ -465,7 +476,6 @@ h2, .h2 {
     .h3__galeria {
         font-size: 55px;
         font-family: inherit;
-        font-weight: bolder;
         margin: 1rem;
         color: rgb(53, 80, 53);
     
@@ -792,6 +802,7 @@ h2, .h2 {
             margin-top: 3rem;
             margin-bottom: 1rem;
     }
+
     body {
         width: 90%;
         height: auto;
