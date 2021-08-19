@@ -27,8 +27,8 @@ html {
 .container {
   
     width: 90%;
-    padding-right: 10px;
-    padding-left: 15px;
+    padding-right: 15px;
+    padding-left: 20px;
     margin-right: auto;
     margin-left: auto;
     background-image: url("imagenes/vespas comidas/fondopapel.jpg");
@@ -1012,7 +1012,8 @@ h2, .h2 {
         }
 
         .back {
-            width: 280px;
+            width: 260px;
+            margin-top: 1rem;
         }
 
         .alinearrh {
