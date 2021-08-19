@@ -2496,7 +2496,8 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .btn:not(:disabled):not(.disabled) {
   cursor: pointer;
   position: relative;
-  bottom: 20px;
+  bottom: 10px;
+  right: 40px;
 
   
 }

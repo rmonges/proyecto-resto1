@@ -10,11 +10,14 @@ html {
 }
 
 .html {
-    width: 770px;
+    width: 360px;
     height: 2240px;
     padding-left: 18;
-    
 }
+
+
+    
+
 
 .contenedor__resp {
     width: 90%;
@@ -253,7 +256,7 @@ li {
     
     list-style: none;
     display: block;
-    padding-right: 110px;   
+    padding-right: 80px;   
     margin-top: 0.9rem;
    
     list-style: none;
@@ -430,7 +433,7 @@ h2, .h2 {
     text-decoration: double;
     border-right: black;
     border-left: black;
-    margin-left: 23%;
+    margin-left: 35%;
     font-family: 'Zen Loop', cursive;
     width: 354px;
     letter-spacing: 0.8rem;
@@ -923,6 +926,7 @@ h2, .h2 {
 
         .h1__galeria {
             font-size: 2rem;
+            margin-left: 0.5rem;
 
         }
 
@@ -941,6 +945,11 @@ h2, .h2 {
 
         .span {
             line-height: 1.5rem;
+        }
+
+        html {
+            width: 400px;
+            height: 1200px;
         }
          
      }
