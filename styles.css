@@ -338,6 +338,17 @@ li {
 
 }
 
+.dropdown {
+    display: none;
+    color: #fff;
+    background-color: #117a8b;
+    border-color: #10707f;
+}
+
+.li__nav {
+    display: block;
+}
+
 .btn-primary {
     color: #fff;
     background-color: #7ebbc4;
@@ -986,6 +997,20 @@ h2, .h2 {
             left: 0.5px;
 
         }
+        .dropdown {
+            display: flex;
+            flex-direction: column;
+            
+            color: #fff;
+            background-color: #117a8b;
+            border-color: #10707f;
+        }
+
+        .navbar-toggler-icon {
+            display: none;
+        }
+
+    
 
     
   
