@@ -4033,7 +4033,7 @@ tbody.collapse.show {
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
-  border: 1px solid transparent;
+  border: 1px solid;
   border-radius: 0.25rem;
 }
 
@@ -4043,6 +4043,8 @@ tbody.collapse.show {
 
 .navbar-toggler:not(:disabled):not(.disabled) {
   cursor: pointer;
+  border-color: black;
+  padding: 0.5rem;
 }
 
 .navbar-toggler-icon {
@@ -6145,8 +6147,11 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: #f8f9fa !important;
-}
+  
+    background-color: #7a80579c;
+  }
+  
+
 
 a.bg-light:hover, a.bg-light:focus,
 button.bg-light:hover,

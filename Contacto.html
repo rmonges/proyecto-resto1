@@ -17,40 +17,48 @@
 </head>
 
 <body class="container">
-    <header  class="header">
-        <nav class="navbar-toggler-icon">
-            <ol class="ol">
-             <li class="item"><a href="Home.html" class="a">Home</a></li>
-             <li class="item"><a href="Menu.html"class="a">Menu</a></li>            
-             <li class="item"><a href="Promociones.html"class="a" >Promociones</a></li> 
-              <ul class="submenu">
-               <li class="subitem">PROMO1</li>
-               <li class="subitem">PROMO2</li>
+    <header class="header">     
+          
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">VespaResto&Bar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="Menu.html">Menu </a>
+                </li>
+                <li class="nav-item dropdown active">
+                  <a class="nav-link dropdown-toggle" href="Promociones.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Promociones</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="Promociones.html">Promo1</a>
+                    <a class="dropdown-item" href="Promociones.html">Promo2</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdowns-item" href="Promociones.html">Obtene descuentos!!</a>
+                  </div>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link disabled" href="Galería.html">Galeria</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link disabled" href="Contacto.html">Contacto</a>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">
+                    Hace tu pedido!
+                    <img src="imagenes/vespas comidas/delivey.png" alt=""height="50px" width="50px"> </button>
+                    <div id="demo" class="collapse"> Realizá tu pedido al wtsp 3515786547 </div>
+                 </li>
               </ul>
-             <li class="item"><a href="Galería.html"class="a"> Galeria</a></li>
-             <li class="item"><a href="Contacto.html"class="a">Contacto</a></li>
-             <li>
-              <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">
-                Hace tu pedido!
-                <img src="imagenes/vespas comidas/delivey.png" alt=""height="50px" width="50px"> </button>
-                <div id="demo" class="collapse"> Realizá tu pedido al wtsp 3515786547 </div>
-             </li>
-            </ol> 
-          </nav>
-          <nav>  
-            <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle"type="button" id="dropdownmenu1" data-toggle="dropdown" aria-extended="true">
-                  Navegador
-                  <span class="caret"></span>
-                </button>  
-                  <ul class="dropdown-menu"role="menu" aria-labelledby="dropdownmenu1">
-                    <li class="li__nav dropdown-divider" role="presentation"><a role="presentation" href="Menu.html">Menu</a></li>
-                    <li class="li__nav dropdown-divider" role="presentation"><a role= "presentation" href="Promociones.html">Promosiones</a></li>
-                    <li class="li__nav dropdown-divider" role="presentation"><a role="presentation" href="Galería.html">Galeria</a></li>
-                    <li class="li__nav dropdown-divider" role="presentation"><a role="presentation"  href="Contacto.html">Contacto</a></li>
-                  </ul>
+              
             </div>
-          </nav>  
+          </nav>
                
         
     </header>

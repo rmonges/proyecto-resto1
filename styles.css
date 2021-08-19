@@ -19,8 +19,8 @@ html {
 
 .container {
   
-    width: 100%;
-    padding-right: 5px;
+    width: 90%;
+    padding-right: 10px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
@@ -59,13 +59,15 @@ main {
     
 }
 .h1__bost {
+    
    margin-bottom: 0.5rem;
-  font-family: inherit;
+  font-family: 'Zen Loop', cursive;
   font-weight: 500;
   line-height: 1.2;
   border: 6px ridge;
   background-image: linear-gradient(to right, #a4d9a4, black);
   margin-top: 4.3rem;
+  font-size: 3rem;
 
 }
 
@@ -201,12 +203,19 @@ h3 {
     margin-left: 3rem;
 }
 
+.navbar-toggler {
+    color: rgba(0, 0, 0, 0.5);
+    border-color: black;
+
+}
+
 header {  
     
-    background-image: linear-gradient(to top, black, #80808040);
-    height: 60px;   
-    
+    background-image: linear-gradient(to top, black, #4fd4949c);
+      width: 100%;
 }
+
+
 
 #btn-menu {
     display: none;
@@ -237,9 +246,11 @@ li {
     
     list-style: none;
     display: block;
-    padding: 40px;
+    padding-right: 110px;   
+    margin-top: 0.9rem;
+   
     list-style: none;
-    padding-top: 15px;
+   
 }
     
     
@@ -782,7 +793,7 @@ h2, .h2 {
             margin-bottom: 1rem;
     }
     body {
-        width: 100%;
+        width: 90%;
         height: auto;
         width: 501px;
 
@@ -990,7 +1001,7 @@ h2, .h2 {
         }
 
         .back {
-            width: 310px;
+            width: 280px;
         }
 
         .alinearrh {
@@ -1008,7 +1019,25 @@ h2, .h2 {
 
         .navbar-toggler-icon {
             display: none;
+   
         }
+
+        .bg-light {
+            
+            background-color: #7a80579c;
+          }
+
+        .h1__bost {
+            font-size: 1.7rem;
+            color: white;
+            margin-top: 1rem;
+        }
+
+        .span {
+            font-size: 0.7rem;
+        }
+
+    
 
     
 
