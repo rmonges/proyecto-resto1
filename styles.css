@@ -839,7 +839,7 @@ h2, .h2 {
 
     .container__menu {
   
-        width: 90%;
+        width: 100%;
         padding-right: 15px;
         padding-left: 20px;
         margin-right: auto;
@@ -902,6 +902,8 @@ h2, .h2 {
         *, ::after, ::before {
             box-sizing: border-box;
         }
+
+
         
 
         .item { 
@@ -1092,13 +1094,14 @@ h2, .h2 {
 
         .navbar-toggler-icon {
             display: none;
+            background-color: #7a80579c;
+            
+            
+
    
         }
 
-        .bg-light {
-            
-            background-color: #7a80579c;
-          }
+       
 
         .h1__bost {
             font-size: 1.7rem;
