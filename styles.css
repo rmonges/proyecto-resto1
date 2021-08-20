@@ -836,6 +836,21 @@ h2, .h2 {
        
 
     }
+
+    .container__menu {
+  
+        width: 90%;
+        padding-right: 15px;
+        padding-left: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        height: auto;
+        background-image: url("imagenes/vespas comidas/carta2.jpg");
+        background-repeat: repeat;
+        background-size: cover;
+        padding: 40px;
+       
+      }
     
     .img__resp {
         width: 300px;
