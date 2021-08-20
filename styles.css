@@ -103,6 +103,7 @@ main {
 
 .borders {
     border: 1px double rgb(1, 1, 15);
+    margin-bottom: 7rem;
 }
 
 .colorblue {
@@ -130,7 +131,7 @@ h2 {
 h3 {
     color: rgb(1, 10, 1);
     text-decoration: underline;
-    margin-top: 3rem;
+    margin-top: 7rem;
     margin-bottom: 2rem;
 } 
 
@@ -163,18 +164,22 @@ h3 {
     text-align: center;    
     background-color: #80808057;
     background-size: 50%;
-    margin-top: 5rem;
-    transform: translate(-25px, 0px);
+    margin-top: 8rem;
+    transform: translate(-2px, 0px);
     
 }
+
+.alinear__navbut{
+    text-align: center;
+   height: 60px;
+   margin-top: 7rem;
+}    
 
 .alinear__nav{
     text-align: center;
    height: 60px;
-   margin-top: 7rem;
-    
+}
    
-}    
     
 .ol {
     list-style: none;        
@@ -216,8 +221,10 @@ h3 {
 
 .item__button {
     display: inline-block;
+    position: relative;
     width: 280px;
     margin-left: 3rem;
+    bottom: 0.5rem;
 }
 
 .navbar-toggler {
@@ -874,7 +881,7 @@ h2, .h2 {
         
 
         .item { 
-            border-top: solid;
+            
             height: 30px;
         }
 
