@@ -56,6 +56,10 @@ main {
     height: 500px;
 }
 
+.margin__footer {
+    margin-bottom: 3rem;
+}
+
 .h1 { 
     color: black;
     font-size: 60px;
@@ -878,6 +882,10 @@ h2, .h2 {
             font-size: 2rem;
 
         }
+
+        *, ::after, ::before {
+            box-sizing: border-box;
+        }
         
 
         .item { 
@@ -993,11 +1001,24 @@ h2, .h2 {
         
         .body__menu {
             padding: 20px;
+            width: 645px;
+        }
+
+        .lead {
+            font-size: 70px;
         }
 
         .span {
             line-height: 1.5rem;
         }
+
+        *, ::after, ::before {
+            box-sizing: none;
+        }
+
+      
+
+
        
 
          
@@ -1069,7 +1090,7 @@ h2, .h2 {
         }
 
         .span {
-            font-size: 0.7rem;
+            font-size: 1.8rem;
         }
 
     

@@ -35,11 +35,7 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+
 
 html {
   font-family: sans-serif;
@@ -8917,6 +8913,10 @@ a.text-dark:hover, a.text-dark:focus {
 
 .visible {
   visibility: visible !important;
+}
+
+*, ::after, ::before {
+  box-sizing: none; 
 }
 
 .invisible {
