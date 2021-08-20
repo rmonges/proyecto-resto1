@@ -4,10 +4,7 @@
     margin: 0;
 }
 
-html {
-    width: 100%;
-    height: 100%;
-}
+
 
 .html {
     width: 360px;
@@ -137,6 +134,14 @@ h3 {
     margin-bottom: 2rem;
 } 
 
+.h3__index {
+    color: rgb(1, 10, 1);
+    text-decoration: underline;
+    margin-top: 28rem;
+    margin-bottom: 2rem;
+
+}
+
  
       
 
@@ -166,6 +171,7 @@ h3 {
 .alinear__nav{
     text-align: center;
    height: 60px;
+   margin-top: 7rem;
     
    
 }    
@@ -174,7 +180,8 @@ h3 {
     list-style: none;        
     padding: 0;
     margin: 0;
-    height: 60px;
+    margin-top: 2rem;
+    
 }
 
 .ol__titulo {
@@ -948,7 +955,7 @@ h2, .h2 {
         }
 
         html {
-            width: 400px;
+            width: 645px;
             height: 1200px;
         }
          
