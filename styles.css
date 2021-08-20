@@ -37,12 +37,7 @@ html {
   }
 
 
-main {
-    width: 100%;
-    box-sizing: border-box;
-    float: left; 
-    
-}   
+
    
     
 
@@ -885,7 +880,7 @@ h2, .h2 {
         }
 
         .parrafo__menu {
-            font-size: 2rem;
+            font-size: 1.5rem;
 
         }
 
@@ -955,6 +950,7 @@ h2, .h2 {
         .h1__galeria {
             font-size: 2rem;
             margin-left: 0.5rem;
+            width: 300px;
 
         }
 
