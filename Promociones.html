@@ -1,7 +1,6 @@
 <html lang="en">
   <head>
     <title></title>        
-    <link rel="stylesheet" href="styles.css" type="text/css">     
     <link rel="stylesheet" href="css/animate.css">
     <script src="js/wow.min.js"></script>
     <script>new WOW().init();</script>
@@ -30,34 +29,66 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Teko:wght@300;400&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="css/bootstrap.css">
+     <link rel="stylesheet" href="./stylecss/styles.css"type=text/css>
      
   </head>
   
-<body class="contenedor__resp">
+<body class="container">
 
-    <header  class="header">
-        <nav class="alinear__nav">
-            <ol class="ol">
-             <li class="item"><a href="Home.html" class="a">Home</a></li>
-             <li class="item"><a href="Menu.html"class="a">Menu</a></li>            
-             <li class="item"><a href="Promociones.html"class="a" >Promociones</a></li> 
-              <ul class="submenu">
-               <li class="subitem">PROMO1</li>
-               <li class="subitem">PROMO2</li>
-              </ul>
-             <li class="item"><a href="Galeria.html"class="a"> Galeria</a></li>
-             <li class="item"><a href="Contacto.html"class="a">Contacto</a></li>
-            </ol>  
-        </nav>   
-    </header> 
+    <header class="header">     
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">VespaResto&Bar</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="Menu.html">Menu </a>
+              </li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="Promociones.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Promociones</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="Promociones.html">Promo1</a>
+                  <a class="dropdown-item" href="Promociones.html">Promo2</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdowns-item" href="Promociones.html">Obtene descuentos!!</a>
+                </div>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link disabled" href="Galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link disabled" href="Contacto.html">Contacto</a>
+              </li>
+              <li>
+                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">
+                  Hace tu pedido!
+                  <img src="imagenes/vespas comidas/delivey.png" alt=""height="50px" width="50px"> </button>
+                  <div id="demo" class="collapse"> Realizá tu pedido al wtsp 3515786547 </div>
+               </li>
+            </ul>
+            
+          </div>
+        </nav>
+             
+      
+    </header>
   
     <main> 
          
       <section class="border__section">
                <div>            
-                 <h1 class="h1__promo">PROMOCIONES</h1>                                                   
+                 <h1 class="promo__h1">PROMOCIONES</h1>                                                   
                </div>
-               <div class="titulo__promos">
+               <div class="promo__titulo">
                  <img class="art__titulo"src="imagenes/vespas comidas/promo5.png" alt="">
                  <h2 class="animate__animated animate__backInDown">APROVECHA NUESTRAS PROMOS!!</h2>
                </div> 
@@ -66,7 +97,7 @@
             <article class="art__comb"> 
                 <div >   
                          
-                    <h3 class="h3__promos">Promo1</h3>                    
+                    <h3 class="promo__h3">Promo1</h3>                    
                 </div>
 
                 <table border="1" class="art__tabla">
@@ -92,7 +123,7 @@
                 </table>  
             
                 <div >
-                    <h3 class="h3__promos">Promo2</h3>
+                    <h3 class="promo__h3">Promo2</h3>
                 </div>                   
                 <table border="1" class="art__tabla">
                     <tr>
@@ -120,7 +151,7 @@
             <article class="art__comb">  
            
                     <div>
-                        <h3 class="h3__promos">Promo3</h3>
+                        <h3 class="promo__h3">Promo3</h3>
                     </div>                   
                     <table border="1" class="art__tabla" >   
                         <tr>
@@ -142,7 +173,7 @@
                     </table>              
             
                  <div>
-                        <h3 class="h3__promos">Promo4</h3>
+                        <h3 class="promo__h3">Promo4</h3>
                  </div>
                  <table border="1"  class="art__tabla">
                         <tr>
@@ -164,7 +195,7 @@
                  </table>  
              
                  <div >
-                    <h3 class="h3__promos">Promo5</h3>
+                    <h3 class="promo__h3">Promo5</h3>
                  </div>                 
                  <table border="1"  class="art__tabla">
                     <tr>
@@ -187,28 +218,27 @@
                 </article> 
                   
                   <div class="flex__pie">
-                      <h3 class="h3__promos">Hace tu pedido!!</h3>
+                      <h3 class="promo__h3">Hace tu pedido!!</h3>
                       <button class="button__comunicate"><a href="Contacto.html">COMUNICATE!</a></button>                  
                       <img class= "transf" src="imagenes/vespas comidas/delivery.png" alt="">
-                   </div> 
+                  </div> 
                  
-             
-                     
         </section>
 
         <div>            
-            <p class="p__promos">#Todos nuestros Sandwitches van acompañados de Papas Rústicas</p></h4>
+            <p class="promo__p">#Todos nuestros Sandwitches van acompañados de Papas Rústicas</p></h4>
         </div>
-        <section class="section__promosa" >
+        <section class="promo__section" >
              <div>
-               <h4 class="box__promos">ATENCIÓN AMIGO VESPERO!!</h4>
+               <h4 class="promo__atension">ATENCIÓN AMIGO VESPERO!!</h4>
              </div>
              <div>               
-              <img  class= "logo" src="imagenes/vespas comidas/logo.jpg" alt="logo" width=85 height="50">
+              <img  class= "promo__logo" src="imagenes/vespas comidas/logo.jpg" alt="logo" width=85 height="50">
              </div>
         </section>        
         <div>
-            <p class="box__promosp">Si sos amigo de la cumunidad Vespa y si nos seguis en nuestras redes sociales, sumas 10% extra a todas nuestras promociones!!!!</p>
+    
+            <p class="promo__box">Si sos amigo de la cumunidad Vespa y si nos seguis en nuestras redes sociales, sumas 10% extra a todas nuestras promociones!!!!</p>
         </div>
             
     </main>
@@ -236,6 +266,11 @@
             </div>
         </section>    
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
     
     
 </body>

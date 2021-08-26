@@ -56,7 +56,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Playfair Display', serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -157,7 +157,7 @@ sup {
 }
 
 a {
-  color: #007bff;
+  color: black;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -2493,7 +2493,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   cursor: pointer;
   position: relative;
   bottom: 10px;
-  right: 40px;
+  right: 0px;
 
   
 }
@@ -2515,8 +2515,8 @@ fieldset:disabled a.btn {
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+  background-color: #7a7ac2;
+  border-color: #5d8ec2;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -3120,7 +3120,7 @@ input[type="button"].btn-block {
 
 .collapse.show {
   display: block;
-  background-color: #bfcddbc9;
+  background-color:none;
 }
 
 tr.collapse.show {
@@ -6145,10 +6145,10 @@ button.bg-danger:focus {
 
 .bg-light {
   
-    background-color: #7a80579c;
+    background-color: #4fd4949c !important;
    
             
-      background-color: #7a80579c;
+      
     
   }
   

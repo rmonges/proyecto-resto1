@@ -1,3 +1,10 @@
+@import './colores.scss';
+@import './_background-img.scss';
+
+$tamaño-h1:5rem;
+
+$width-button: 70px;
+$back-color: #ab646457;
 
 * {
     padding: 0;
@@ -12,16 +19,11 @@ html {
     height: 100%;
 }
 
-
-
-    
-
-
 .contenedor__resp {
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;
-    background-image: url("imagenes/vespas comidas/fondopapel.jpg");
+    background-image: $fondopapel;
     background-size: cover;
 }
 
@@ -32,24 +34,34 @@ html {
     padding-left: 20px;
     margin-right: auto;
     margin-left: auto;
-    background-image: url("imagenes/vespas comidas/fondopapel.jpg");
+    background-image: $fondopapel;
     background-size: cover;
   }
 
+  /*aplico operaciones button index*/
+
+.button-1 {
+    width:  $width-button;
+}
+
+.button-2 {
+    width:  $width-button + 30px;
+}
+.button-3 {
+    width:  $width-button + 60px;
+}
 
 
-   
-    
 
-/*Index--Comun Se aplico Flex*/
+  /*Index--Comun Se aplico Flex*/
 /*ALINEAR NAV*/
 
 
 .back__img {
-    background-image: url("imagenes/vespas comidas/pizzaslider.jpg") ;
+    background-image: url("../imagenes/vespas comidas/pizzaslider.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    height: 506px;
 }
 
 .margin__footer {
@@ -58,16 +70,15 @@ html {
 
 .h1 { 
     color: black;
-    font-size: 60px;
+    font-size: $tamaño-h1;
     font-family: 'Playfair Display', serif;
     text-align: center;
     border: 6px ridge;   
-
     
 }
+
 .h1__bost {
-    
-   margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
   font-family: 'Zen Loop', cursive;
   font-weight: 500;
   line-height: 1.2;
@@ -75,11 +86,9 @@ html {
   background-image: linear-gradient(to right, #a4d9a4, black);
   margin-top: 4.3rem;
   font-size: 3rem;
-
 }
 
 .navbar-toggler-icon {
-  
     display:flex;
     align-content: center;
     justify-content: space-around;    
@@ -103,12 +112,11 @@ html {
 
 .borders {
     border: 1px double rgb(1, 1, 15);
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
 }
 
 .colorblue {
     color:black;
-
 }
 
 .parrafo__menu {
@@ -116,8 +124,7 @@ html {
     font-family: 'Zen Loop', cursive;
     font-size: 23px;
     font-weight: bold;
-        
-}
+        }
 
 h2 {
     font-family: 'Zen Loop', cursive;
@@ -140,12 +147,7 @@ h3 {
     text-decoration: underline;
     margin-top: 28rem;
     margin-bottom: 2rem;
-
 }
-
- 
-      
-
 
 .conocenos__box {
     border-radius: 8px;
@@ -153,40 +155,35 @@ h3 {
     margin-left: 5rem;
     display: flex;
     flex-flow: row;
-    align-items: flex-start;
+    align-items: flex-end;
     margin-right: 5rem;
     margin-top: 3rem;
 }
 
 .alinear__button{
-   
-   
     text-align: center;    
     background-color: #80808057;
     background-size: 50%;
     margin-top: 8rem;
     transform: translate(-2px, 0px);
-    
 }
 
-.alinear__navbut{
+.alinear__navbut {
     text-align: center;
    height: 60px;
    margin-top: 7rem;
 }    
 
-.alinear__nav{
+.alinear__nav {
     text-align: center;
    height: 60px;
 }
    
-    
 .ol {
     list-style: none;        
     padding: 0;
     margin: 0;
     margin-top: 2rem;
-    
 }
 
 .ol__titulo {
@@ -195,7 +192,6 @@ h3 {
     flex-direction: column;
     padding: 0;
     margin: 0;
-    
 }
 
 .alinearrh {   
@@ -207,16 +203,12 @@ h3 {
 
 .box {
     margin: 20px;
-
 }
 
  .item:hover {
     
     width: 140px;
     background: rgb(110, 99, 99);
-    
-
-    
 }
 
 .item__button {
@@ -230,14 +222,9 @@ h3 {
 .navbar-toggler {
     color: rgba(0, 0, 0, 0.5);
     border-color: black;
-
 }
 
-header {  
-    
-    background-image: linear-gradient(to top, black, #4fd4949c);
-      width: 100%;
-}
+header 
 
 
 
@@ -252,40 +239,36 @@ header label {
     width: 30px;
 }
 
-header label:hover {
+/*APLICO BEM*/
+
+header {
+    
+    background-image: $color-nav;
+    width: 100%;
+    
+
+ label:hover {
     cursor: pointer;
     background: rgba(0,0,0, 0.3);
-}
+   }
 
-
-header nav ol { 
-   
+ nav ol { 
     display: flex; 
     justify-content: space-between;
-    
-        
+   }
+
 }
 
 li {
-    
-    list-style: none;
+     list-style: none;
     display: block;
     padding-right: 80px;   
     margin-top: 0.9rem;
-    text-decoration: underline;
-   
     list-style: none;
-   
 }
     
-    
-
-    
-
-
 .a {
     text-decoration: none; 
-    
     color: #dae0e5;
     font-family: 'Zen Loop', cursive;
     font-size: 25px;
@@ -296,7 +279,6 @@ li {
     font-size: 25px;
     font-weight: bold;
     color:white;
-
 }
 
 .section {
@@ -304,18 +286,13 @@ li {
     margin-bottom: 80px;    
     height: 600px;
     display: inline;
-
-   
-
 }
 
-.verticalAlig{
+.verticalAlig {
     vertical-align: 100px;
 }
 
-
-
-.tamaño{
+.tamaño {
     font-size: 35px;
     font-family: 'Zen Loop', cursive;
     color: black;
@@ -336,11 +313,7 @@ li {
 .article__imagen{
     width: 50%;
     display: inline-block;
-
 }
-
-
-
 
 .submenu {
     background-color: cadetblue;
@@ -365,13 +338,10 @@ li {
 .form-group {
     margin-bottom: 3rem;
     margin-top: 3rem;
-       
 }
 
-
-.estas__contacto{
+.estas__contacto {
     text-emphasis: none;
-
 }
 
 .dropdown {
@@ -390,30 +360,30 @@ li {
     background-color: #7ebbc4;
     border-color: #007bff33;
   }
-
-.section__dir {
-    
+/*aplico BEM*/
+.section {
+    &__dir {
     display:inline-block; 
     width: 45%;   
     padding: 5px;
     border: 4px double;    
     background-image: linear-gradient(to right, #a4d9a4, black);
-}
+    }
 
-h2, .h2 {
-    font-size: 2rem;
-    margin-top: 3rem;
-  }
-
-.section__hor {
-    
+    &__hor {
     display:inline-table; 
     width: 45%;   
     padding: 5px;
     border: 4px double;
     margin-top: 30px;
     background-image: linear-gradient(to right, #a4d9a4, black);
-} 
+    } 
+}
+
+h2, .h2 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
 
 .box__form {
     border: 2px double;
@@ -428,9 +398,7 @@ h2, .h2 {
     display: inherit;
 } 
 
-
 .flex__cont {
-
     display: flex;
     justify-content: space-between;
 }
@@ -443,7 +411,7 @@ h2, .h2 {
     font-size: 50px 30px;
     text-align: center;
     border: double 5px #a88686;
-    background-color: rgb(0 128 131 / 20%);
+    background-color: #0000ff33 ;
     margin-bottom: 3rem;
     text-decoration: double;
     border-right: black;
@@ -453,12 +421,9 @@ h2, .h2 {
     width: 354px;
     letter-spacing: 0.8rem;
     word-spacing: 1.5rem;
-
 }
 
-    
-
-    .carousel {
+.carousel {
         position: relative;
         left: 05px;
         margin-top: 2rem;
@@ -466,40 +431,38 @@ h2, .h2 {
     
     
 
-    .img__scale {
+.img__scale {
         transform: scale(0.8, 1);
     }
       
-
-    .h2__galeria {
+.h2__galeria {
         font-size: 40px;
         font-family: inherit;
         text-underline-position: auto;
         color: rgb(53, 80, 53);
     }
 
-    .body__galeria {
+.body__galeria {
         background-color: rgb(184, 228, 230);
     }
 
-    .p__galeria {
+.p__galeria {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
         letter-spacing: 5px;
         word-spacing: 10px;
         line-height: 18px;
         text-align: center;
-    }
+}
 
-    .h3__galeria {
+.h3__galeria {
         font-size: 55px;
         font-family: inherit;
         margin: 1rem;
         color: rgb(53, 80, 53);
-    
-    }
+}
 
-    .contenedor {        
+.contenedor {        
         width: 100%;
         display: grid;
         grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
@@ -507,98 +470,90 @@ h2, .h2 {
         padding: 20px;
         gap: 1em;
         margin-top: 3rem;
-       
-    }    
+}    
 
-    .three-columns {
+.three-columns {
         display: flex;
         align-items: center;
         justify-content: center;
         border: double 2px black;
-       
-        }
-    .three-columns:hover {
+       }
+
+.three-columns:hover {
        filter: opacity(0.9);
        transform: scale(1.04);
-    }
+}
 
-
-
-    /******APLIQUE FLEX SECCION PROMOSIONES******/
+/******APLIQUE FLEX SECCION PROMOSIONES******/
     
-    .h1__promo { 
+.promo__h1 { 
         color: black;
-        font-size: 60px;
+        font-size: $tamaño-h1;
         font-family: 'Playfair Display', serif;
         text-align: center;
         border: 6px ridge;   
-    
-        
-    }
-    /*aplico animate*/
+}
 
-    .animate__backInDown {
+/*aplico animate*/
+
+.animate__backInDown {
         animation-iteration-count: infinite;
         animation-duration: 5s;
     }
 
+/*aplico trasform rotate*/
 
-    /*aplico trasform rotate*/
-   .art__titulo {
+.art__titulo {
     position: relative;
     left: 80px;
     transform: rotate(-45deg)
-   }
+}
 
-    .h1__promo:hover {
-        color: rgb(238, 109, 109)
-    }
+
     
 
-    .promosiones {
+.promosiones {
         border-top-width: 1px;
     }
 
-    .section__promos {
+.section__promos {
         display: flex; 
-            
-        
     } 
 
-    .titulo__promos {
+.promo__titulo {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: stretch;
+}
 
-    }
-
-    .h3__promos {
+.promo__h3 {
         font-size: 35px;
         font-family: 'Indie Flower', cursive;
         letter-spacing: 5px;
         word-spacing: 10px;
         text-align: center;
-     
-        
-    }
-    .art__comb {
-        display: flex;
+}
+
+.art__comb {
+    
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    }
+    
+}
 
-    .button__comunicate {
+.button__comunicate {
         font-family: 'Zen Loop', cursive;
         font-size: 25px;
         color: black;
     }
     
-    .flex__pie {
-        display: flex;
+.flex__pie {
+    display: flex;
     flex-wrap: nowrap;
     align-content: flex-start;
     justify-content: flex-end;
@@ -606,34 +561,29 @@ h2, .h2 {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    }
+}
 
-    .art__delivery {
+.art__delivery {
         display: flex;
         flex-direction:column-reverse;
     }
 
-
-    .border__section {
+.border__section {
         border-style: double;        
-       background-image: url("imagenes/vespas comidas/hamburguesa2.jpg");
+       background-image: url("../imagenes/vespas comidas/hamburguesa2.jpg");
        background-repeat: no-repeat;
        background-size: cover;
-
-        
-    }
+}
     
-    
-    .div__p {
+.div__p {
         margin-top: 3rem;
     }
-    .h3__promos {
+
+.promos__h3 {
         color: black;
     }
      
-    
-
-    .box__promos {        
+.promo__atension {        
         box-decoration-break: unset;
         font-family: 'Shadows Into Light', cursive;
         font-size: 35px;
@@ -643,27 +593,22 @@ h2, .h2 {
         line-height: 28px;
         text-align: center;
         color: white;       
-    }
+}
 
+.promo {
+         &__p {
+            bottom: 120px;
+            font-weight: bolder;
+            font-size: 20px;
+            font-family: italic;
+          }
 
-    .p__promos {
-        
-        bottom: 120px;
-        font-weight: bolder;
-        font-size: 20px;
-        font-family: italic;
-        
-    }
-
-    .logo {
+        &__logo { 
         display: flex;
         transform: rotate(-45deg);
+        }
 
-    }
-   
-
-    
-    .box__promosp {
+        &__box {
         height: 200px;       
         font-family: 'Shadows Into Light', cursive;
         font-size: 35px;
@@ -673,46 +618,44 @@ h2, .h2 {
         line-height: 28px;
         text-align: center;
         margin-bottom: 4rem;
-        background-image: url("imagenes/vespas comidas/vespasss.jpg");
-        
+        background-image: url("../imagenes/vespas comidas/vespasss.jpg");
         background-size: auto;
-        
+        }
+        &__section {
+            border: none;
+            display: flex; 
+            justify-content: center;      
+            margin-top: 8rem;
+            margin-bottom: 2rem;
+            -ms-flex-align: center;
+            background-color: rgb(110, 50, 50);
     }
+}    
 
-    .section__promosa {
-        border: none;
-        display: flex; 
-        justify-content: center;      
-        margin-top: 8rem;
-        margin-bottom: 2rem;
-        -ms-flex-align: center;
-        background-color: rgb(110, 50, 50);
+/*APLICO BEM*/
 
+.art {
+    &__tabla{ 
+      background-color: #d1cece66;
     }
-
-    .art__tabla {
-        background-color: #d1cece66;
-    }   
-
-    .art__tablados {
+    &__tablados{
         background-color: #d1cece66 ;
     }
-    
-    /***SECCION FOOTER***/
+}    
+  
+/***SECCION FOOTER***/
 
-    .footer__bottom {
+.footer__bottom {
         display: flex;
         flex-direction: column;      
+}
 
-
-    }
-
-    .div__footer {
+.div__footer {
         margin-bottom: 5rem;
         margin-top: 5rem;
-        
-    }
-    footer section div img {
+}
+    
+footer section div img {
         position: relative;
         left: 1.5rem;
         top: -0.5rem;
@@ -725,11 +668,7 @@ h2, .h2 {
         transform: translate(-45px);
 }
 
-
-
-    
-
-    .span {
+.span {
         box-sizing: border-box;
         border: 2px white double;
         font-style: italic;
@@ -744,7 +683,7 @@ h2, .h2 {
         margin-bottom: 3rem;
     }
     
-    .pie {
+.pie {
         display: flex;
         width: 100%;
         justify-content: flex-end;
@@ -752,55 +691,40 @@ h2, .h2 {
         margin-bottom: 30px;       
      }
 
-     .pie__pag {
-         
+.pie__pag {
          display: flex;
          flex-direction: column ;
          width: 150.812px;
          align-items: stretch;
-      
-         
-         
-     }
+}
 
-     .pie__img {
+.pie__img {
         display: flex;
         flex-direction: column;  
-    }
+}
 
     /******SECCION MENU SE APLICO FLEX******/
     /***********************/
 
-    .margin__tit {
+.margin__tit {
         margin-top: 8rem;
         margin-bottom: 5rem;
     }
 
-    .td__menu {
+.td__menu {
         text-align: left 
     }
 
-    td {
+td {
         width: 140px;
         margin-right: 25px;
-        
-    }
+}
 
-    .h1__menu {
-
-        font-size: 3rem;
-        font-family: 'Zen Loop', cursive;
-        font-weight: bold;
-        margin-top: 3rem;
-      }
-
-    .table__menu {
-
+.table__menu {
         margin: top 0;
-    }
+ }
 
-    .table__margin {
-
+.table__margin {
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
     }
@@ -809,17 +733,12 @@ h2, .h2 {
          display: flex;
          flex-wrap: wrap;
          justify-content: flex-end;
-        background-image: url("imagenes/vespas comidas/carta2.jpg");
+        background-image: url("../imagenes/vespas comidas/carta2.jpg");
         background-repeat: no-repeat;
         background-size: 100%;
-        
-
-       
-        
-    }
+}
     
-    .h2__menu {
-        
+.h2__menu {
             font-family: 'Zen Loop', cursive;
             color:black;
             font-size: 30px;
@@ -838,54 +757,46 @@ h2, .h2 {
     .body__menu {
         width: 90%;
         height: auto;
-        background-image: url("imagenes/vespas comidas/carta2.jpg");
+        background-image: url("../imagenes/vespas comidas/carta2.jpg");
         background-repeat: repeat;
         background-size: cover;
         padding: 40px;
-       
-
     }
 
     .container__menu {
-  
         width: 100%;
         padding-right: 15px;
         padding-left: 20px;
         margin-right: auto;
         margin-left: auto;
         height: auto;
-        background-image: url("imagenes/vespas comidas/carta2.jpg");
+        background-image: url("../imagenes/vespas comidas/carta2.jpg");
         background-repeat: repeat;
         background-size: cover;
         padding: 40px;
-       
-      }
+       }
     
     .img__resp {
         width: 300px;
-    height: -webkit-fill-available;
-        
+    height: 225px;
     }
-
-    /*media index*/
 
     @media screen and (max-width:780px) {
         .h1 {
             font-size: 2rem;
-           
         }
 
         .container {
-
-            width: 360px;
+           width: 360px;
         }
 
-        .h1__promo {
+        .promo__h1 {
             color: wheat;
         }
 
         .conocenos__box {
             flex-direction: column;
+
         }
         
         .a {
@@ -895,7 +806,6 @@ h2, .h2 {
         section article ul {
             display: flex;
             flex-direction: column;
-            align-items: center;
 
         }
         .span {
@@ -913,11 +823,8 @@ h2, .h2 {
         *, ::after, ::before {
             box-sizing: border-box;
         }
-
-
-        
-
-        .item { 
+ 
+       .item { 
             
             height: 30px;
         }
@@ -930,7 +837,7 @@ h2, .h2 {
             display: none;
         }
 
-        .box__promosp {
+        .promo__box {
             font-size: 20px;
         
         }
@@ -943,10 +850,21 @@ h2, .h2 {
     /*promosiones aplico TRANSFORM SCALE*/
    
      @media screen and (max-width:780px) {
-        .box__promosp {
-            font-size: 2rem;
+        .promo__box {               
+        color: rgb(24, 22, 22);
+        font-size: 1.4rem;
+        font-weight: bolder;
+        letter-spacing: 8px;
+        word-spacing: 12px;
+        line-height: 23px;
+        text-align: center;
+        margin-bottom: 4rem
+        ;
+        background-image: url("../imagenes/vespas comidas/vespasss.jpg");
+          
+
         }
-        .h1__promo {
+        .promo__h1 {
             font-size: 2rem;
         }   
 
@@ -963,8 +881,12 @@ h2, .h2 {
             left: 10px;
         }
 
-        .h3__promos {
+        .promos__h3 {
             font-size: 2.4rem;
+        }
+
+        *, ::after, ::before {
+            box-sizing: none; 
         }
 
          
@@ -1010,8 +932,8 @@ h2, .h2 {
 
      @media screen and (max-width: 780px) {
                
-        .h1__menu {
-            font-size: 1.8rem;
+        .h1 {
+            font-size: 1.3rem;
             margin-top: 1rem;
         }
         
@@ -1023,11 +945,6 @@ h2, .h2 {
     
             display: flex;
             flex-direction: column;
-        }
-
-        header {
-            width: 325px;
-            padding: 1rem;
         }
 
         .a {
@@ -1050,8 +967,6 @@ h2, .h2 {
         *, ::after, ::before {
             box-sizing: none;
         }
-
-        
 
       
 
@@ -1117,7 +1032,7 @@ h2, .h2 {
 
         .bg-light {
             
-            background-color: #4fd4949c;
+            background-color: #7a80579c;
           }
 
        
@@ -1135,23 +1050,27 @@ h2, .h2 {
         .html {
             width: 100%;
         }
+     } 
+     
+     /*CONDICIONALES INDEX*/
 
+     @if $back-color == #80808057 {
+         .alinear__button{
+             background-color: #80808057;
+         }
+        }@else if $back-color == #ab646457 { 
+            .alinear__button {
+             background-color: #ab646457;
+        }
+        }@else if $back-color == #64ab8957{ 
+             .alinear__button {
+              background-color: #64ab8957;
+            }  
+         }@else {
+             .alinear__button {
+                background-color: #233a2f57;
+             }
+         }   
     
 
-    
 
-    
-  
-
-       
-         
-     }
-        
-    
-    
-    
-
-        
-    
-
-    
