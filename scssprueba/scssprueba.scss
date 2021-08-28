@@ -1,19 +1,17 @@
 @import './colores.scss';
 @import './_background-img.scss';
+@import './compartidos';
 
 $tamaño-h1:5rem;
 
 $width-button: 70px;
-$back-color: #ab646457;
+
+$back-color: #80808057;
 
 * {
     padding: 0;
     margin: 0;
 }
-
-
-
-
 html {
     width: 100%;
     height: 100%;
@@ -38,7 +36,7 @@ html {
     background-size: cover;
   }
 
-  /*aplico operaciones button index*/
+  /*aplico operaciones button index-linea39*/
 
 .button-1 {
     width:  $width-button;
@@ -56,6 +54,12 @@ html {
   /*Index--Comun Se aplico Flex*/
 /*ALINEAR NAV*/
 
+.carousel {
+    position: relative;
+    left: 2px;
+    margin-top: 2rem;
+}
+
 
 .back__img {
     background-image: url("../imagenes/vespas comidas/pizzaslider.jpg") ;
@@ -68,14 +72,15 @@ html {
     margin-bottom: 3rem;
 }
 
-.h1 { 
+.index__h1 { 
     color: black;
-    font-size: $tamaño-h1;
+    font-size: 3rem;
     font-family: 'Playfair Display', serif;
     text-align: center;
     border: 6px ridge;   
-    
+    background-color: #ffffff42;
 }
+
 
 .h1__bost {
   margin-bottom: 0.5rem;
@@ -152,12 +157,27 @@ h3 {
 .conocenos__box {
     border-radius: 8px;
     box-shadow: 30px 0px 35px gray;    
-    margin-left: 5rem;
+    margin-left: 2rem;
     display: flex;
     flex-flow: row;
-    align-items: flex-end;
     margin-right: 5rem;
     margin-top: 3rem;
+
+    
+    
+
+}
+
+.conocenos__boxa1 {
+    border-radius: 8px;
+    box-shadow: 30px 0px 35px gray;    
+    margin-left: 2rem;
+    display: flex;
+    flex-flow: row;
+    margin-right: 5rem;
+    margin-top: 3rem;
+    margin: 2px;
+   
 }
 
 .alinear__button{
@@ -224,10 +244,6 @@ h3 {
     border-color: black;
 }
 
-header 
-
-
-
 #btn-menu {
     display: none;
 } 
@@ -292,12 +308,11 @@ li {
     vertical-align: 100px;
 }
 
+/*Aplico Extend en index*/
+
 .tamaño {
-    font-size: 35px;
-    font-family: 'Zen Loop', cursive;
-    color: black;
-    font-weight: bolder;
-    background-color: rgb(185, 179, 179);
+    @extend .button__color;
+    background-color: #6daaa3;
 }
 
 .article__titulo {
@@ -405,8 +420,10 @@ h2, .h2 {
 
 /*******SECCION GALERÍA APLIQUE GRID*******/
 
+/*APLICO BEM*/
 
-.h1__galeria { 
+.galeria { 
+    &__h1{
     color: black;
     font-size: 50px 30px;
     text-align: center;
@@ -416,50 +433,36 @@ h2, .h2 {
     text-decoration: double;
     border-right: black;
     border-left: black;
-    margin-left: 35%;
+    margin-left: 35px;
     font-family: 'Zen Loop', cursive;
     width: 354px;
     letter-spacing: 0.8rem;
     word-spacing: 1.5rem;
-}
-
-.carousel {
-        position: relative;
-        left: 05px;
-        margin-top: 2rem;
+    position: relative;
+    left: 30%;
     }
-    
-    
-
-.img__scale {
-        transform: scale(0.8, 1);
-    }
-      
-.h2__galeria {
+    &__h2 {
         font-size: 40px;
         font-family: inherit;
         text-underline-position: auto;
         color: rgb(53, 80, 53);
     }
 
-.body__galeria {
-        background-color: rgb(184, 228, 230);
-    }
-
-.p__galeria {
+    &__p {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
         letter-spacing: 5px;
         word-spacing: 10px;
         line-height: 18px;
         text-align: center;
-}
+     }     
 
-.h3__galeria {
+    &__h3 {
         font-size: 55px;
         font-family: inherit;
         margin: 1rem;
         color: rgb(53, 80, 53);
+    }
 }
 
 .contenedor {        
@@ -470,7 +473,13 @@ h2, .h2 {
         padding: 20px;
         gap: 1em;
         margin-top: 3rem;
-}    
+}
+
+
+
+.img__scale {
+    transform: scale(0.8, 1);
+}
 
 .three-columns {
         display: flex;
@@ -486,13 +495,6 @@ h2, .h2 {
 
 /******APLIQUE FLEX SECCION PROMOSIONES******/
     
-.promo__h1 { 
-        color: black;
-        font-size: $tamaño-h1;
-        font-family: 'Playfair Display', serif;
-        text-align: center;
-        border: 6px ridge;   
-}
 
 /*aplico animate*/
 
@@ -518,23 +520,7 @@ h2, .h2 {
 
 .section__promos {
         display: flex; 
-    } 
-
-.promo__titulo {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: stretch;
-}
-
-.promo__h3 {
-        font-size: 35px;
-        font-family: 'Indie Flower', cursive;
-        letter-spacing: 5px;
-        word-spacing: 10px;
-        text-align: center;
-}
+    }            
 
 .art__comb {
     
@@ -579,23 +565,39 @@ h2, .h2 {
         margin-top: 3rem;
     }
 
-.promos__h3 {
-        color: black;
-    }
-     
-.promo__atension {        
-        box-decoration-break: unset;
-        font-family: 'Shadows Into Light', cursive;
-        font-size: 35px;
-        font-weight: bolder;
-        letter-spacing: 5px;
-        word-spacing: 10px;
-        line-height: 28px;
-        text-align: center;
-        color: white;       
-}
-
 .promo {
+        &__h1 {
+            color: black;
+            font-size: $tamaño-h1;
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            border: 6px ridge;   
+        }
+         &__titulo {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: space-around;
+         align-items: stretch;
+         }
+         &__h3 {
+         font-size: 35px;
+         font-family: 'Indie Flower', cursive;
+         letter-spacing: 5px;
+         word-spacing: 10px;
+         text-align: center;}
+
+           &__atension {        
+            box-decoration-break: unset;
+            font-family: 'Shadows Into Light', cursive;
+            font-size: 35px;
+            font-weight: bolder;
+            letter-spacing: 5px;
+            word-spacing: 10px;
+            line-height: 28px;
+            text-align: center;
+            color: white;}
+
          &__p {
             bottom: 120px;
             font-weight: bolder;
@@ -603,34 +605,36 @@ h2, .h2 {
             font-family: italic;
           }
 
-        &__logo { 
-        display: flex;
-        transform: rotate(-45deg);
-        }
+          &__logo { 
+          display: flex;
+          transform: rotate(-45deg);
+          }
 
-        &__box {
-        height: 200px;       
-        font-family: 'Shadows Into Light', cursive;
-        font-size: 35px;
-        font-weight: bolder;
-        letter-spacing: 5px;
-        word-spacing: 10px;
-        line-height: 28px;
-        text-align: center;
-        margin-bottom: 4rem;
-        background-image: url("../imagenes/vespas comidas/vespasss.jpg");
-        background-size: auto;
-        }
-        &__section {
+          &__box{
+           height: 200px;       
+           font-family: 'Shadows Into Light', cursive;
+           font-size: 35px;
+           font-weight: bolder;
+           letter-spacing: 5px;
+           word-spacing: 10px;
+           line-height: 28px;
+           text-align: center;
+           margin-bottom: 4rem;
+           background-image: url("../imagenes/vespas comidas/vespasss.jpg");
+           background-size: auto;
+          }
+           &__section {
             border: none;
-            display: flex; 
-            justify-content: center;      
+            display: flex;
+            justify-content: center;
             margin-top: 8rem;
             margin-bottom: 2rem;
             -ms-flex-align: center;
-            background-color: rgb(110, 50, 50);
-    }
-}    
+            background-color: #6e3232; }
+           }   
+        
+        
+    
 
 /*APLICO BEM*/
 
@@ -645,15 +649,19 @@ h2, .h2 {
   
 /***SECCION FOOTER***/
 
-.footer__bottom {
-        display: flex;
-        flex-direction: column;      
+
+.footer {
+         &__bottom {
+            display: flex;
+            flex-direction: column;      
+    }
+         &__div {
+            margin-bottom: 5rem;
+            margin-top: 5rem;
+         }
+
 }
 
-.div__footer {
-        margin-bottom: 5rem;
-        margin-top: 5rem;
-}
     
 footer section div img {
         position: relative;
@@ -710,80 +718,91 @@ footer section div img {
         margin-top: 8rem;
         margin-bottom: 5rem;
     }
+    
+    
+/*APLICO BEM*/
 
-.td__menu {
+.menu {
+    &__td {
         text-align: left 
     }
-
-td {
-        width: 140px;
-        margin-right: 25px;
-}
-
-.table__menu {
+    &__flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+       background-image: url("../imagenes/vespas comidas/carta2.jpg");
+       background-repeat: no-repeat;
+       background-size: 100%;
+    }  
+    &__table {
         margin: top 0;
- }
-
-.table__margin {
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .flex__menu {
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: flex-end;
-        background-image: url("../imagenes/vespas comidas/carta2.jpg");
-        background-repeat: no-repeat;
-        background-size: 100%;
-}
-    
-.h2__menu {
+    } 
+    &__h2 {
             font-family: 'Zen Loop', cursive;
             color:black;
             font-size: 30px;
             font-weight: bold;
             text-decoration-line: underline;
             margin-top: 3rem;
-            margin-bottom: 1rem;
-    }
+            margin-bottom: 1rem;}
+    &__body {
+            width: 90%;
+            height: auto;
+            background-image: url("../imagenes/vespas comidas/carta2.jpg");
+            background-repeat: repeat;
+            background-size: cover;
+            padding: 40px;
+        }
+     &__container {
+           width: 100%;
+           padding-right: 15px;
+           padding-left: 20px;
+           margin-right: auto;
+           margin-left: auto;
+           height: auto;
+           background-image: url("../imagenes/vespas comidas/carta2.jpg");
+           background-repeat: repeat;
+           background-size: cover;
+           padding: 40px;
+        }   
+}  
 
+  td {
+        width: 140px;
+        margin-right: 25px;}
+
+    .table__margin {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
     body {
         width: 90%;
         height: auto;
         width: 501px;
-
-    }
-    .body__menu {
-        width: 90%;
-        height: auto;
-        background-image: url("../imagenes/vespas comidas/carta2.jpg");
-        background-repeat: repeat;
-        background-size: cover;
-        padding: 40px;
     }
 
-    .container__menu {
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 20px;
-        margin-right: auto;
-        margin-left: auto;
-        height: auto;
-        background-image: url("../imagenes/vespas comidas/carta2.jpg");
-        background-repeat: repeat;
-        background-size: cover;
-        padding: 40px;
-       }
-    
     .img__resp {
         width: 300px;
     height: 225px;
     }
 
     @media screen and (max-width:780px) {
-        .h1 {
+        .index__h1 {
             font-size: 2rem;
+        }
+
+        .conocenos__box {
+            flex-direction: column;
+            margin-left: 1rem;
+            margin-right: 0px;
+            margin-top: 3rem;
+        }
+
+        .carousel {
+            position: relative;
+            left: -65px;
+            margin: 2rem;
+            width: 340px;
         }
 
         .container {
@@ -794,11 +813,6 @@ td {
             color: wheat;
         }
 
-        .conocenos__box {
-            flex-direction: column;
-
-        }
-        
         .a {
             font-size:1.7rem;
         }
@@ -816,7 +830,7 @@ td {
         }
 
         .parrafo__menu {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
 
         }
 
@@ -839,7 +853,6 @@ td {
 
         .promo__box {
             font-size: 20px;
-        
         }
 
         .transf {
@@ -897,9 +910,9 @@ td {
     
      @media screen and (max-width:780px) {
 
-        .h1__galeria {
+        .galeria__h1 {
             font-size: 2rem;
-            margin-left: 0.5rem;
+            margin-left: -5.4rem;
             width: 300px;
 
         }
@@ -932,7 +945,7 @@ td {
 
      @media screen and (max-width: 780px) {
                
-        .h1 {
+        .index__h1 {
             font-size: 1.3rem;
             margin-top: 1rem;
         }
@@ -1032,7 +1045,7 @@ td {
 
         .bg-light {
             
-            background-color: #7a80579c;
+            background-color: linear-gradient(to top, black, #4fd4949c);
           }
 
        
@@ -1070,7 +1083,7 @@ td {
              .alinear__button {
                 background-color: #233a2f57;
              }
-         }   
+     }   
     
 
-
+    

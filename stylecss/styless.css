@@ -1,4 +1,11 @@
 @charset "UTF-8";
+.button__color, .tamaño {
+  font-size: 35px;
+  font-family: 'Zen Loop', cursive;
+  color: black;
+  font-weight: bolder;
+  background-color: #b9b3b3; }
+
 * {
   padding: 0;
   margin: 0; }
@@ -23,7 +30,7 @@ html {
   background-image: url("../imagenes/vespas comidas/fondopapel.jpg");
   background-size: cover; }
 
-/*aplico operaciones button index*/
+/*aplico operaciones button index-linea39*/
 .button-1 {
   width: 70px; }
 
@@ -35,6 +42,11 @@ html {
 
 /*Index--Comun Se aplico Flex*/
 /*ALINEAR NAV*/
+.carousel {
+  position: relative;
+  left: 2px;
+  margin-top: 2rem; }
+
 .back__img {
   background-image: url("../imagenes/vespas comidas/pizzaslider.jpg");
   background-repeat: no-repeat;
@@ -44,12 +56,13 @@ html {
 .margin__footer {
   margin-bottom: 3rem; }
 
-.h1 {
+.index__h1 {
   color: black;
-  font-size: 5rem;
+  font-size: 3rem;
   font-family: 'Playfair Display', serif;
   text-align: center;
-  border: 6px ridge; }
+  border: 6px ridge;
+  background-color: #ffffff42; }
 
 .h1__bost {
   margin-bottom: 0.5rem;
@@ -115,12 +128,21 @@ h3 {
 .conocenos__box {
   border-radius: 8px;
   box-shadow: 30px 0px 35px gray;
-  margin-left: 5rem;
+  margin-left: 2rem;
   display: flex;
   flex-flow: row;
-  align-items: flex-end;
   margin-right: 5rem;
   margin-top: 3rem; }
+
+.conocenos__boxa1 {
+  border-radius: 8px;
+  box-shadow: 30px 0px 35px gray;
+  margin-left: 2rem;
+  display: flex;
+  flex-flow: row;
+  margin-right: 5rem;
+  margin-top: 3rem;
+  margin: 2px; }
 
 .alinear__button {
   text-align: center;
@@ -175,7 +197,6 @@ h3 {
   color: rgba(0, 0, 0, 0.5);
   border-color: black; }
 
-header
 #btn-menu {
   display: none; }
 
@@ -187,7 +208,7 @@ header label {
 
 /*APLICO BEM*/
 header {
-  background-image: linear-gradient(to top, black, blue);
+  background-image: gradient(to top, black, #4fd4949c);
   width: 100%; }
   header label:hover {
     cursor: pointer;
@@ -224,12 +245,9 @@ li {
 .verticalAlig {
   vertical-align: 100px; }
 
+/*Aplico Extend en index*/
 .tamaño {
-  font-size: 35px;
-  font-family: 'Zen Loop', cursive;
-  color: black;
-  font-weight: bolder;
-  background-color: #b9b3b3; }
+  background-color: #6daaa3; }
 
 .article__titulo {
   font-size: 20px;
@@ -314,7 +332,8 @@ h2, .h2 {
   justify-content: space-between; }
 
 /*******SECCION GALERÍA APLIQUE GRID*******/
-.h1__galeria {
+/*APLICO BEM*/
+.galeria__h1 {
   color: black;
   font-size: 50px 30px;
   text-align: center;
@@ -324,30 +343,21 @@ h2, .h2 {
   text-decoration: double;
   border-right: black;
   border-left: black;
-  margin-left: 35%;
+  margin-left: 35px;
   font-family: 'Zen Loop', cursive;
   width: 354px;
   letter-spacing: 0.8rem;
-  word-spacing: 1.5rem; }
-
-.carousel {
+  word-spacing: 1.5rem;
   position: relative;
-  left: 05px;
-  margin-top: 2rem; }
+  left: 30%; }
 
-.img__scale {
-  transform: scale(0.8, 1); }
-
-.h2__galeria {
+.galeria__h2 {
   font-size: 40px;
   font-family: inherit;
   text-underline-position: auto;
   color: #355035; }
 
-.body__galeria {
-  background-color: #b8e4e6; }
-
-.p__galeria {
+.galeria__p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   letter-spacing: 5px;
@@ -355,7 +365,7 @@ h2, .h2 {
   line-height: 18px;
   text-align: center; }
 
-.h3__galeria {
+.galeria__h3 {
   font-size: 55px;
   font-family: inherit;
   margin: 1rem;
@@ -370,6 +380,9 @@ h2, .h2 {
   gap: 1em;
   margin-top: 3rem; }
 
+.img__scale {
+  transform: scale(0.8, 1); }
+
 .three-columns {
   display: flex;
   align-items: center;
@@ -381,13 +394,6 @@ h2, .h2 {
   transform: scale(1.04); }
 
 /******APLIQUE FLEX SECCION PROMOSIONES******/
-.promo__h1 {
-  color: black;
-  font-size: 5rem;
-  font-family: 'Playfair Display', serif;
-  text-align: center;
-  border: 6px ridge; }
-
 /*aplico animate*/
 .animate__backInDown {
   animation-iteration-count: infinite;
@@ -404,20 +410,6 @@ h2, .h2 {
 
 .section__promos {
   display: flex; }
-
-.promo__titulo {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: stretch; }
-
-.promo__h3 {
-  font-size: 35px;
-  font-family: 'Indie Flower', cursive;
-  letter-spacing: 5px;
-  word-spacing: 10px;
-  text-align: center; }
 
 .art__comb {
   display: flex;
@@ -454,8 +446,26 @@ h2, .h2 {
 .div__p {
   margin-top: 3rem; }
 
-.promos__h3 {
-  color: black; }
+.promo__h1 {
+  color: black;
+  font-size: 5rem;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  border: 6px ridge; }
+
+.promo__titulo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch; }
+
+.promo__h3 {
+  font-size: 35px;
+  font-family: 'Indie Flower', cursive;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  text-align: center; }
 
 .promo__atension {
   box-decoration-break: unset;
@@ -512,7 +522,7 @@ h2, .h2 {
   display: flex;
   flex-direction: column; }
 
-.div__footer {
+.footer__div {
   margin-bottom: 5rem;
   margin-top: 5rem; }
 
@@ -564,21 +574,11 @@ footer section div img {
   margin-top: 8rem;
   margin-bottom: 5rem; }
 
-.td__menu {
+/*APLICO BEM*/
+.menu__td {
   text-align: left; }
 
-td {
-  width: 140px;
-  margin-right: 25px; }
-
-.table__menu {
-  margin: top 0; }
-
-.table__margin {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem; }
-
-.flex__menu {
+.menu__flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -586,7 +586,10 @@ td {
   background-repeat: no-repeat;
   background-size: 100%; }
 
-.h2__menu {
+.menu__table {
+  margin: top 0; }
+
+.menu__h2 {
   font-family: 'Zen Loop', cursive;
   color: black;
   font-size: 30px;
@@ -595,12 +598,7 @@ td {
   margin-top: 3rem;
   margin-bottom: 1rem; }
 
-body {
-  width: 90%;
-  height: auto;
-  width: 501px; }
-
-.body__menu {
+.menu__body {
   width: 90%;
   height: auto;
   background-image: url("../imagenes/vespas comidas/carta2.jpg");
@@ -608,7 +606,7 @@ body {
   background-size: cover;
   padding: 40px; }
 
-.container__menu {
+.menu__container {
   width: 100%;
   padding-right: 15px;
   padding-left: 20px;
@@ -620,19 +618,40 @@ body {
   background-size: cover;
   padding: 40px; }
 
+td {
+  width: 140px;
+  margin-right: 25px; }
+
+.table__margin {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; }
+
+body {
+  width: 90%;
+  height: auto;
+  width: 501px; }
+
 .img__resp {
   width: 300px;
   height: 225px; }
 
 @media screen and (max-width: 780px) {
-  .h1 {
+  .index__h1 {
     font-size: 2rem; }
+  .conocenos__box {
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 0px;
+    margin-top: 3rem; }
+  .carousel {
+    position: relative;
+    left: -65px;
+    margin: 2rem;
+    width: 340px; }
   .container {
     width: 360px; }
   .promo__h1 {
     color: wheat; }
-  .conocenos__box {
-    flex-direction: column; }
   .a {
     font-size: 1.7rem; }
   section article ul {
@@ -644,7 +663,7 @@ body {
     letter-spacing: 1rem;
     word-spacing: 0.2rem; }
   .parrafo__menu {
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
   *, ::after, ::before {
     box-sizing: border-box; }
   .item {
@@ -685,9 +704,9 @@ body {
 
 /*Galeria*/
 @media screen and (max-width: 780px) {
-  .h1__galeria {
+  .galeria__h1 {
     font-size: 2rem;
-    margin-left: 0.5rem;
+    margin-left: -5.4rem;
     width: 300px; }
   .h3__galeria {
     font-size: 2rem;
@@ -704,7 +723,7 @@ body {
 
 /*Menu*/
 @media screen and (max-width: 780px) {
-  .h1 {
+  .index__h1 {
     font-size: 1.3rem;
     margin-top: 1rem; }
   .flex__menu {
@@ -757,7 +776,7 @@ body {
   .navbar-toggler-icon {
     display: none; }
   .bg-light {
-    background-color: #7a80579c; }
+    background-color: linear-gradient(to top, black, #4fd4949c); }
   .h1__bost {
     font-size: 1.7rem;
     color: white;
@@ -769,4 +788,4 @@ body {
 
 /*CONDICIONALES INDEX*/
 .alinear__button {
-  background-color: #ab646457; }
+  background-color: #80808057; }

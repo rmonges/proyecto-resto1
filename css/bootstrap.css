@@ -5882,6 +5882,7 @@ button.close {
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
   perspective: 1000px;
+  right: 10px;
 }
 
 .carousel-item.active,
@@ -6145,7 +6146,7 @@ button.bg-danger:focus {
 
 .bg-light {
   
-    background-color: #4fd4949c !important;
+    background-color:  #4fd4949c !important;
    
             
       
@@ -7394,7 +7395,7 @@ button.bg-dark:focus {
 }
 
 .w-100 {
-  width: 100% !important;
+  width: none !important;
 }
 
 .h-25 {

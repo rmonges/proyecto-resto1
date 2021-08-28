@@ -12,64 +12,63 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="./stylecss/styles.css"type=text/css>
+        <link rel="stylesheet" href="./stylecss/styless.css"type=text/css>
   </head>
 
-   <body class="contenedor__resp">
-    <header class="header">     
-          
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">VespaResto&Bar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<body class="container">
+     <header class="header">     
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">VespaResto&Bar</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="Menu.html">Menu </a>
+              </li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="Promociones.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Promociones</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="Promociones.html">Promo1</a>
+                  <a class="dropdown-item" href="Promociones.html">Promo2</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdowns-item" href="Promociones.html">Obtene descuentos!!</a>
+                </div>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link disabled" href="Galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link disabled" href="Contacto.html">Contacto</a>
+              </li>
+              <li>
+                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">
+                  Hace tu pedido!
+                  <img src="imagenes/vespas comidas/delivey.png" alt=""height="50px" width="50px"> </button>
+                  <div id="demo" class="collapse"> Realizá tu pedido al wtsp 3515786547 </div>
+               </li>
+            </ul>
+            
+          </div>
+        </nav>
+             
       
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="Menu.html">Menu </a>
-            </li>
-            <li class="nav-item dropdown active">
-              <a class="nav-link dropdown-toggle" href="Promociones.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Promociones</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="Promociones.html">Promo1</a>
-                <a class="dropdown-item" href="Promociones.html">Promo2</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdowns-item" href="Promociones.html">Obtene descuentos!!</a>
-              </div>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link disabled" href="Galeria.html">Galeria</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link disabled" href="Contacto.html">Contacto</a>
-            </li>
-            <li>
-              <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">
-                Hace tu pedido!
-                <img src="imagenes/vespas comidas/delivey.png" alt=""height="50px" width="50px"> </button>
-                <div id="demo" class="collapse"> Realizá tu pedido al wtsp 3515786547 </div>
-             </li>
-          </ul>
-          
-        </div>
-      </nav>
-           
-    
     </header>
       <br>
       <br>                       
        <main> 
           <section>
-            <h1 class= "h1__galeria">GALERÍA</h1> 
+            <h1 class= "galeria__h1">GALERÍA</h1> 
           </section> 
           <section>           
                <h3 class="h3__galeria">En VespaResto&Bar</h3>
-               <p class="p__galeria">Te mostramos nuestros deliciosos platos, algunos cocinados en nuestros hornos de barros. Esperamos que tu experienca al probarlos sea igual de gratificante como lo es para nosotros su elabaracion.</p>
+               <p class="galeria__p">Te mostramos nuestros deliciosos platos, algunos cocinados en nuestros hornos de barros. Esperamos que tu experienca al probarlos sea igual de gratificante como lo es para nosotros su elabaracion.</p>
           </section>       
         
           <div class="contenedor" >                                
@@ -94,7 +93,7 @@
              </article> 
            </div>    
            
-           <h2 class="h2__galeria">Nuestros amigos Vesperos</h2>
+           <h2 class="galeria__h2">Nuestros amigos Vesperos</h2>
            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -142,7 +141,7 @@
 
      <footer >
        <section class="footer__top">
-          <div class="div__footer">
+          <div class="footer__div">
               <span class= "span" >#Seguinos en nuestras redes</span>             
               <img src="imagenes/vespas comidas/logo redes.jpg" alt="logo redes" width="65" height="45">
           </div> 

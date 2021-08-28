@@ -1,10 +1,9 @@
 {
   "name": "proyecto-resto1",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass --include-path scss scssprueba/scssprueba.scss stylecss/styles.css",
+    "build-css": "node-sass --include-path scss scssprueba/scssprueba.scss stylecss/styless.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
@@ -20,5 +19,6 @@
   "devDependencies": {
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.12"
-  }
+  },
+  "description": ""
 }
