@@ -10,27 +10,24 @@ $back-color: #80808057;
 
 * {
     padding: 0;
-    margin: 0;
-   
-}
+    margin: 0;}
 html {
     width: 100%;
-    height: 100%;
-}
+    height: 100%;}
 
 .play {
     width: 100%;
     height: 150px;
     background-color: black;
     margin-bottom: 7rem;
-
 }
 
-.index__medios {
+.index {
+    &__medios{
     margin-top: 15rem;
-
+    }
 }
-.index__h2play{
+    &__h2play{
     color: white;
     font-family: 'Oswald', sans-serif;
     font-size: 1.3rem;
@@ -40,34 +37,25 @@ html {
     text-decoration: none;
     font-weight: none;
     padding: 20px;
-    background-color:#363d43;
-    
-}
+    background-color:#363d43;}
 
-.index__h3play{
+    &__h3play{
     color: white;
     font-family:'Playfair Display', serif ;
     font-size: 1rem;
     letter-spacing: 10px;
-    word-spacing: 5px;
-}
+    word-spacing: 5px;}
 
-.index__auspiciantes {
-        display: flex;
+    &__auspiciantes {
+        display: flex;}
 
-
-    }
-
-.index__img {
+    &__img {
     background-image: url("../imagenes/vespas comidas/vespa\ muro.jpg");
     position: relative;
     left: 24px;
-    top: 48px;
-    
+    top: 48px;}
 
-}
-
-.index__blockplay {
+    &__blockplay {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -76,7 +64,7 @@ html {
     background-color: black;
     padding: 20px;
 }
-.index__audio {
+    &__audio {
     display: flex;
 }
 
@@ -983,10 +971,7 @@ footer section div img {
 
         *, ::after, ::before {
             box-sizing: none; 
-        }
-
-         
-            
+        }       
      }
 
      /*Galeria*/
