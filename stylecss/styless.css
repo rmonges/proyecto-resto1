@@ -273,7 +273,7 @@ nav ol {
 li {
   list-style: none;
   display: block;
-  padding-right: 60px;
+  padding-right: 100px;
   margin-top: 0.9rem;
   list-style: none; }
 
@@ -709,7 +709,7 @@ body {
     margin-top: 3rem; }
   .carousel {
     position: relative;
-    left: -65px;
+    left: -57px;
     margin: 2rem;
     width: 340px; }
   .container {
@@ -772,6 +772,9 @@ body {
     font-size: 2rem;
     margin-left: -5.4rem;
     width: 300px; }
+  .d-block {
+    width: -webkit-fill-available;
+    padding-left: 30px; }
   .galeria__h3 {
     font-size: 2rem;
     text-align: center; }
