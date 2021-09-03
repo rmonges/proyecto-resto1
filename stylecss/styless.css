@@ -14,8 +14,57 @@ html {
   width: 100%;
   height: 100%; }
 
+.play {
+  width: 100%;
+  height: 150px;
+  background-color: black;
+  margin-bottom: 7rem; }
+
+.index__medios {
+  margin-top: 15rem; }
+
+.index__h2play {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  letter-spacing: 5px;
+  word-spacing: 15px;
+  text-decoration: none;
+  font-weight: none;
+  padding: 20px;
+  background-color: #363d43; }
+
+.index__h3play {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  letter-spacing: 10px;
+  word-spacing: 5px; }
+
+.index__auspiciantes {
+  display: flex; }
+
+.index__img {
+  background-image: url("../imagenes/vespas comidas/vespa muro.jpg");
+  position: relative;
+  left: 24px;
+  top: 48px; }
+
+.index__blockplay {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 150px;
+  background-color: black;
+  padding: 20px; }
+
+.index__audio {
+  display: flex; }
+
 .contenedor__resp {
-  width: 90%;
+  width: 100%;
   max-width: 1000px;
   margin: 0 auto;
   background-image: url("../imagenes/vespas comidas/fondopapel.jpg");
@@ -42,13 +91,16 @@ html {
 
 /*Index--Comun Se aplico Flex*/
 /*ALINEAR NAV*/
+.main__general {
+  padding-top: 0rem; }
+
 .carousel {
   position: relative;
   left: 2px;
   margin-top: 2rem; }
 
 .back__img {
-  background-image: url("../imagenes/vespas comidas/pizzaslider.jpg");
+  background-image: url("../imagenes/vespas comidas/pizzaslider.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 506px; }
@@ -206,21 +258,22 @@ header label {
   border: 1px solid #fff;
   width: 30px; }
 
-/*APLICO BEM*/
-header {
+main header {
   background-image: gradient(to top, black, #4fd4949c);
-  width: 100%; }
-  header label:hover {
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.3); }
-  header nav ol {
-    display: flex;
-    justify-content: space-between; }
+  width: 90%; }
+
+label:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3); }
+
+nav ol {
+  display: flex;
+  justify-content: space-between; }
 
 li {
   list-style: none;
   display: block;
-  padding-right: 80px;
+  padding-right: 60px;
   margin-top: 0.9rem;
   list-style: none; }
 
@@ -372,7 +425,7 @@ h2, .h2 {
   color: #355035; }
 
 .contenedor {
-  width: 100%;
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-auto-rows: minmax(200px, auto);
@@ -498,7 +551,7 @@ h2, .h2 {
   line-height: 28px;
   text-align: center;
   margin-bottom: 4rem;
-  background-image: url("../imagenes/vespas comidas/vespasss.jpg");
+  background-image: url("../imagenes/vespas comidas/vespasss.png");
   background-size: auto; }
 
 .promo__section {
@@ -523,8 +576,8 @@ h2, .h2 {
   flex-direction: column; }
 
 .footer__div {
-  margin-bottom: 5rem;
-  margin-top: 5rem; }
+  margin-bottom: 6rem;
+  margin-top: 1rem; }
 
 footer section div img {
   position: relative;
@@ -575,6 +628,14 @@ footer section div img {
   margin-bottom: 5rem; }
 
 /*APLICO BEM*/
+.menu__h1 {
+  font-family: 'italic';
+  font-family: 'Cormorant Garamond', serif;
+  color: black;
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration-line: underline; }
+
 .menu__td {
   text-align: left; }
 
@@ -582,7 +643,7 @@ footer section div img {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  background-image: url("../imagenes/vespas comidas/carta2.jpg");
+  background-image: url("../imagenes/vespas comidas/carta2.png");
   background-repeat: no-repeat;
   background-size: 100%; }
 
@@ -592,7 +653,7 @@ footer section div img {
 .menu__h2 {
   font-family: 'Zen Loop', cursive;
   color: black;
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: bold;
   text-decoration-line: underline;
   margin-top: 3rem;
@@ -601,7 +662,7 @@ footer section div img {
 .menu__body {
   width: 90%;
   height: auto;
-  background-image: url("../imagenes/vespas comidas/carta2.jpg");
+  background-image: url("../imagenes/vespas comidas/carta2.png");
   background-repeat: repeat;
   background-size: cover;
   padding: 40px; }
@@ -613,10 +674,9 @@ footer section div img {
   margin-right: auto;
   margin-left: auto;
   height: auto;
-  background-image: url("../imagenes/vespas comidas/carta2.jpg");
+  background-image: url("../imagenes/vespas comidas/carta2.png");
   background-repeat: repeat;
-  background-size: cover;
-  padding: 40px; }
+  background-size: cover; }
 
 td {
   width: 140px;
@@ -636,6 +696,10 @@ body {
   height: 225px; }
 
 @media screen and (max-width: 780px) {
+  .back__img {
+    background-image: url("../imagenes/vespas comidas/pizzaslider.png");
+    background-repeat: no-repeat;
+    background-size: cover; }
   .index__h1 {
     font-size: 2rem; }
   .conocenos__box {
@@ -688,7 +752,7 @@ body {
     line-height: 23px;
     text-align: center;
     margin-bottom: 4rem;
-    background-image: url("../imagenes/vespas comidas/vespasss.jpg"); }
+    background-image: url("../imagenes/vespas comidas/vespasss.png"); }
   .promo__h1 {
     font-size: 2rem; }
   .flex__pie {
@@ -708,7 +772,7 @@ body {
     font-size: 2rem;
     margin-left: -5.4rem;
     width: 300px; }
-  .h3__galeria {
+  .galeria__h3 {
     font-size: 2rem;
     text-align: center; }
   .a {
@@ -726,6 +790,9 @@ body {
   .index__h1 {
     font-size: 1.3rem;
     margin-top: 1rem; }
+  .menu__h1 {
+    font-size: 2rem;
+    text-align: center; }
   .flex__menu {
     justify-content: flex-start; }
   .flex__cont {
@@ -789,3 +856,29 @@ body {
 /*CONDICIONALES INDEX*/
 .alinear__button {
   background-color: #80808057; }
+
+@media screen and (max-width: 780px) {
+  .index__h2play {
+    font-size: 20px;
+    width: 320px; }
+  .index__blockplay {
+    flex-direction: column;
+    height: 400px;
+    width: 320px;
+    align-items: center; }
+  .index__audio {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column; }
+  .index__img {
+    position: relative;
+    left: 0px;
+    top: 0px; }
+  .footer__div {
+    margin-bottom: 1rem;
+    margin-top: 3rem; }
+  .borders {
+    margin-bottom: 3rem; }
+  .index__medios {
+    margin-bottom: 3rem;
+    margin-top: 29rem; } }
