@@ -26,8 +26,8 @@ html {
     &__medios{
     margin-top: 15rem;
     }
-}
-    &__h2play{
+
+    &__h2play {
     color: white;
     font-family: 'Oswald', sans-serif;
     font-size: 1.3rem;
@@ -62,11 +62,11 @@ html {
     align-items: flex-end;
     height: 150px;
     background-color: black;
-    padding: 20px;
-}
+    padding: 20px;}
+    
     &__audio {
-    display: flex;
-}
+    display: flex;}
+}    
 
 .contenedor__resp {
     width: 100%;
@@ -117,12 +117,20 @@ html {
 
 
 .back__img {
-    background-image: url("../imagenes/vespas comidas/pizzaslider.png") 
-    ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 506px;
+    height: 100%;
+    width:100%;
+    background-image: url("../imagenes/vespas comidas/pizzarosso1.jpg"); 
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    margin-top: 2rem;
 }
+    
+   
+   
+
+
+
+
 
 .margin__footer {
     margin-bottom: 3rem;
@@ -168,6 +176,7 @@ html {
     align-items: flex-end;
     margin-top: 19rem;
     justify-content: flex-end;
+    height: 252px;
 }
 
 
@@ -852,12 +861,17 @@ footer section div img {
     @media screen and (max-width:780px) {
 
         .back__img {
-            background-image: url("../imagenes/vespas comidas/pizzaslider.png") 
-            ;
-            background-repeat: no-repeat;
-            background-size: cover;
+            height: auto;
+            width:100%;
+            background-image: url("../imagenes/vespas comidas/pizzarosso.jpg"); 
+            background-size: 100% 100%;
+            background-attachment: fixed;}
+
+        .item__button {
             
+            margin-left: 7rem;
         }
+           
         .index__h1 {
             font-size: 2rem;
         }

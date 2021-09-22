@@ -100,10 +100,12 @@ html {
   margin-top: 2rem; }
 
 .back__img {
-  background-image: url("../imagenes/vespas comidas/pizzaslider.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 506px; }
+  height: 100%;
+  width: 100%;
+  background-image: url("../imagenes/vespas comidas/pizzarosso1.jpg");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  margin-top: 2rem; }
 
 .margin__footer {
   margin-bottom: 3rem; }
@@ -142,7 +144,8 @@ html {
   flex-direction: row;
   align-items: flex-end;
   margin-top: 19rem;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  height: 252px; }
 
 .borders {
   border: 1px double #01010f;
@@ -697,9 +700,13 @@ body {
 
 @media screen and (max-width: 780px) {
   .back__img {
-    background-image: url("../imagenes/vespas comidas/pizzaslider.png");
-    background-repeat: no-repeat;
-    background-size: cover; }
+    height: auto;
+    width: 100%;
+    background-image: url("../imagenes/vespas comidas/pizzarosso.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed; }
+  .item__button {
+    margin-left: 7rem; }
   .index__h1 {
     font-size: 2rem; }
   .conocenos__box {
